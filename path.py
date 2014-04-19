@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
+sys.path.append('api/java/lib/proxy.jar')
+
 import math
+from model import Plane
 
 def distance(p1, p2):
     """
