@@ -35,6 +35,8 @@ class BaseIA(AbstractAI):
             self.save_snapshot()
             print "Update received"
 
+            print self.all_bases
+
     def save_snapshot(self):
         """
         Save the current game snapshot. *self.game* have to be initiated before
@@ -53,22 +55,22 @@ class BaseIA(AbstractAI):
         self.num_frame = self.game.getNumFrame()
         self.visible_bases = self.game.getVisibleBase()
 
-        self.all_bases = {k: self.all_bases
-                for k in self.all_bases}
-        self.ennemy_planes = {k: self.ennemy_planes
-                for k in self.ennemy_planes}
-        self.killed_planes = {k: self.killed_planes
-                for k in self.killed_planes}
-        self.my_bases = {k: self.my_bases
-                for k in self.my_bases}
-        self.my_planes = {k: self.my_planes
-                for k in self.my_planes}
-        self.not_owned_and_not_visible_bases = {k: self.not_o_and_not_v_bases
-                for k in self.not_o_and_not_v_bases}
-        self.not_owned_and_visible_bases = {k: self.not_o_and_v_bases
-                for k in self.not_o_and_v_bases}
-        self.visible_bases = {k: self.visible_bases
-                for k in self.visible_bases}
+        self.all_bases = dict((k, self.all_bases[k])
+                for k in self.all_bases)
+        self.ennemy_planes = dict((k, self.ennemy_planes[k])
+                for k in self.ennemy_planes)
+        self.killed_planes = dict((k, self.killed_planes[k])
+                for k in self.killed_planes)
+        self.my_bases = dict((k, self.my_bases[k])
+                for k in self.my_bases)
+        self.my_planes = dict((k, self.my_planes[k])
+                for k in self.my_planes)
+        self.not_owned_and_not_visible_bases = dict((k, self.not_o_and_not_v_bases[k])
+                for k in self.not_o_and_not_v_bases)
+        self.not_owned_and_visible_bases = dict((k, self.not_o_and_v_bases[k])
+                for k in self.not_o_and_v_bases)
+        self.visible_bases = dict((k, self.visible_bases[k])
+                for k in self.visible_bases)
 
     def end(self):
         pass
