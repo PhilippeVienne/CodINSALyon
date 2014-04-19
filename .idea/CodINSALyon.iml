@@ -2,7 +2,7 @@
 <module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="Python" name="Python">
-      <configuration sdkName="Jython 2.2.1 (/usr/bin/jython)" />
+      <configuration sdkName="" />
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
@@ -13,7 +13,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="library" name="Python 3.2.3 (/usr/bin/python3mu) interpreter library" level="application" />
   </component>
 </module>
 

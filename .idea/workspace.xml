@@ -2,8 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66e3a945-3ed1-4b36-8ed9-6dae36ac04af" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/Client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/CommandSender.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/EmptyAI.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/IncomingData.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/Proxy.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/AttackCommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/BuildPlaneCommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/Command.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/DropMilitarsCommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/ExchangeResourcesCommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/FillFuelTankCommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/FollowCommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/LandCommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/MoveCommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/WaitCommand.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/command/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/genbridge/Bridge-remote" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/genbridge/Bridge.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/genbridge/CommandReceiver-remote" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/genbridge/CommandReceiver.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/genbridge/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/genbridge/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/genbridge/ttypes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/model/AbstractBase.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/model/Base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/model/Coord.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/model/Country.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/model/Entity.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/model/MaterialEntity.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/model/MovingEntity.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/model/Plane.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/model/ProgressAxis.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/model/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/TSCons.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/TSerialization.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/TTornado.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/Thrift.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/protocol/TBase.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/protocol/TBinaryProtocol.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/protocol/TCompactProtocol.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/protocol/TJSONProtocol.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/protocol/TProtocol.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/protocol/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/server/THttpServer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/server/TNonblockingServer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/server/TProcessPoolServer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/server/TServer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/server/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/transport/THttpClient.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/transport/TSSLSocket.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/transport/TSocket.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/transport/TTransport.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/transport/TTwisted.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/transport/TZlibTransport.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pyapi/thrift/transport/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CodINSALyon.iml" afterPath="$PROJECT_DIR$/.idea/CodINSALyon.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CodINSALyon.iws" />
@@ -22,7 +80,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -58,62 +116,16 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_rules />
-    <ui_properties />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true" />
+    <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="CodINSALyon" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Proxy.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3682">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DemoIA.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="27" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="616">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsoleAI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="19" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="2520">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Proxy.class" pinned="false" current="true" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="25" selection-start="990" selection-end="990" vertical-scroll-proportion="0.14634146" vertical-offset="150" max-vertical-offset="1134">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlanesMover.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="378">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -141,8 +153,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="-1" />
+    <option name="y" value="27" />
+    <option name="width" value="1922" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -151,6 +165,8 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
@@ -158,7 +174,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -170,8 +186,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -186,30 +200,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="CodINSALyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lyon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -486,6 +484,7 @@
       <changelist id="66e3a945-3ed1-4b36-8ed9-6dae36ac04af" name="Default" comment="" />
       <created>1397916181353</created>
       <updated>1397916181353</updated>
+      <workItem from="1397941273082" duration="48000" />
     </task>
     <task id="LOCAL-00001" summary="Ignore PyCharm project files">
       <created>1397916238643</created>
@@ -498,37 +497,46 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="48000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34545454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31016043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34545454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -549,176 +557,263 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3682">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3945">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="616">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="660">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="2520">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="2700">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="20" selection-start="1138" selection-end="1149" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1134">
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1215">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="378">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="405">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3682">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3682">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
+        <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="616">
+          <caret line="27" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="2520">
+          <caret line="9" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1134">
+          <caret line="27" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="378">
+          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3682">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/EmptyAI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/CommandSender.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/model/AbstractBase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/model/Base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib64/python2.7/threading.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/EmptyAI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/IncomingData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/model/Plane.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/thrift/Thrift.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.028455285" vertical-offset="0" max-vertical-offset="984" />
+        <state vertical-scroll-proportion="0.028455285" vertical-offset="0" max-vertical-offset="984">
+          <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="405">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/ai/MoveAI.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.07113821" vertical-offset="0" max-vertical-offset="984" />
+        <state vertical-scroll-proportion="0.07113821" vertical-offset="0" max-vertical-offset="984">
+          <caret line="6" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/ai/AbstractAI.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="360" selection-end="360" vertical-scroll-proportion="0.18495935" vertical-offset="0" max-vertical-offset="984" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
-          <folding />
+        <state vertical-scroll-proportion="0.18495935" vertical-offset="0" max-vertical-offset="984">
+          <caret line="14" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/java/ExampleAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="4" selection-start="426" selection-end="426" vertical-scroll-proportion="0.33300298" vertical-offset="0" max-vertical-offset="1009" />
+        <state vertical-scroll-proportion="0.33300298" vertical-offset="0" max-vertical-offset="1009">
+          <caret line="24" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="25" selection-start="990" selection-end="990" vertical-scroll-proportion="0.14634146" vertical-offset="150" max-vertical-offset="1134">
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1215">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="2700">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40268457" vertical-offset="0" max-vertical-offset="894">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
