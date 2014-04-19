@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
+sys.path.append('api/java/lib/proxy.jar')
+
 import math
+from model import Plane
 
 def distance(p1, p2):
     """
@@ -28,11 +32,11 @@ def evaluation(plane, base):
     Returns:
     Real : Represent the rank to go to the position *base*.
     """
-    p1 = plane.position.x, plane.position.y
-    p2 = base.position.x, base.position.y
+    p1 = plane.position().x(), plane.position().y()
+    p2 = base.position().x(), base.position().y()
     return distance(p1, p2)
 
-def get_path(plane, bases, max_iteration=5):
+def get_path(plane, bases, fuel=None, max_iteration=5):
     """
     Construct a new path for the plane *plane* inside the set of node *bases*.
     Do only a maximum of *max_iteration* iteration. The arguments *plane* and
@@ -41,7 +45,9 @@ def get_path(plane, bases, max_iteration=5):
 
     Arguments:
     plane -- Plane : Construct the path from this plane
-    bases -- set(BasicView) : Set of nodes
+    bases -- [BasicView] : Set of nodes
+    fuel -- Maybe double : Current fuel or None if the current fuel (default
+    None)
     max_iteration -- Int : Max iteration (default 5)
 
     Returns:
@@ -51,7 +57,16 @@ def get_path(plane, bases, max_iteration=5):
         return []
     if not bases:
         return []
-    i, nearest = sorted(enumerate(bases), bases),
-            key=lambda (_, b): evaluation(plane, b))
+    if fuel is None:
+        fuel = plane.fuelInTank()
+    i, nearest = sorted(enumerate(bases),
+            key=lambda (_, b): evaluation(plane, b))[0]
     bases.pop(i)
-    return [nearest] + get_path(plane, bases, max_iteration - 1)
+    p1 = plane.position().x(), plane.position().y()
+    p2 = nearest.position().x(), nearest.position().y()
+    d = distance(p1, p2)
+    fuel -= d * plane.type.fuelConsumptionPerDistanceUnit
+    if fuel < 0:
+        fuel = 0
+        return []
+    return [nearest] + get_path(plane, bases, fuel, max_iteration - 1)
