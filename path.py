@@ -54,4 +54,11 @@ def get_path(plane, bases, max_iteration=5):
     i, nearest = sorted(enumerate(bases), bases),
             key=lambda (_, b): evaluation(plane, b))
     bases.pop(i)
+    p1 = plane.position.x, plane.position.y
+    p2 = base.position.x, base.position.y
+    d = distance(p1, p2)
+    plane.fuelInTank -= d * Plane.Type.fuelConsumptionPerDistanceUnit
+    if plane.fuelInTank < 0:
+        plane.fuelInTank = 0
+        return []
     return [nearest] + get_path(plane, bases, max_iteration - 1)
