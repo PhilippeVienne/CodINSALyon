@@ -28,7 +28,7 @@ from path import get_path
 from model.Plane import Type as PlaneType
 from command import BuildPlaneCommand
 
-class BaseIA(AbstractAI):
+class BaseAI(AbstractAI):
     def __init__(self, ip, port):
         AbstractAI.__init__(self, ip, port)
         self.toggle = 0
@@ -103,5 +103,5 @@ if __name__ == "__main__":
         print "Usage : ./AI.py ip port"
         sys.exit()
 
-    ai = BaseIA(sys.argv[1], int(sys.argv[2]))
+    ai = BaseAI(sys.argv[1], int(sys.argv[2]))
     ai.think()

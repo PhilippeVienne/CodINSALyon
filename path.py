@@ -44,14 +44,14 @@ def get_path(plane, bases, fuel=None, max_iteration=5):
     modification.
 
     Arguments:
-    plane -- Plane : Construct the path from this plane
-    bases -- [BasicView] : Set of nodes
-    fuel -- Maybe double : Current fuel or None if the current fuel (default
-    None)
+    plane         -- Plane : Construct the path from this plane
+    bases         -- [BasicView] : Set of nodes
+    fuel          -- Maybe double : Current fuel or None if the current fuel
+    (default None)
     max_iteration -- Int : Max iteration (default 5)
 
     Returns:
-    [(x, y)] : Path
+    [BasicView] : Path
     """
     if max_iteration is 0:
         return []
