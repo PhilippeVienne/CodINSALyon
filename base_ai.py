@@ -16,6 +16,7 @@ sys.path.append('api/java/lib/slf4j-log4j12-1.5.8.jar')
 sys.path.append('api/java/lib/utils.json.jar')
 
 from ai import AbstractAI
+from path import get_path
 
 class BaseAI(AbstractAI):
     def __init__(self, ip, port):
@@ -26,9 +27,9 @@ class BaseAI(AbstractAI):
             # print self.game
             self.game.updateSimFrame()
             self.save_snapshot()
+            for p in self.my_planes.values():
+                print p, ":", get_path(p, self.all_bases.values())
             print "Update received"
-
-            print self.all_bases
 
     def save_snapshot(self):
         """
