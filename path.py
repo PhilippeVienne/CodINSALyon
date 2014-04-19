@@ -28,7 +28,9 @@ def evaluation(plane, base):
     Returns:
     Real : Represent the rank to go to the position *base*.
     """
-    return 1.0
+    p1 = plane.position.x, plane.position.y
+    p2 = base.position.x, base.position.y
+    return distance(p1, p2)
 
 def get_path(plane, bases, max_iteration=5):
     """
