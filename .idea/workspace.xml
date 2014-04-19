@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66e3a945-3ed1-4b36-8ed9-6dae36ac04af" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CodINSALyon.iml" afterPath="$PROJECT_DIR$/.idea/CodINSALyon.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CodINSALyon.iws" />
@@ -21,7 +22,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -57,6 +58,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -78,7 +80,7 @@
       <file leaf-file-name="DemoIA.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="27" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
+            <state line="27" column="27" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="616">
               <folding />
             </state>
           </provider>
@@ -87,36 +89,16 @@
       <file leaf-file-name="ConsoleAI.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="36" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractAI.class" pinned="false" current="true" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/ai/AbstractAI.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="32" selection-start="154" selection-end="164" vertical-scroll-proportion="0.07113821" vertical-offset="0" max-vertical-offset="984">
+            <state line="9" column="19" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="2520">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proxy.class" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Proxy.class" pinned="false" current="true" current-in-tab="true">
         <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="20" selection-start="1138" selection-end="1149" vertical-scroll-proportion="-14.56" vertical-offset="0" max-vertical-offset="1134">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExampleAI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/java/ExampleAI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="41" selection-start="45" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742">
+            <state line="22" column="25" selection-start="990" selection-end="990" vertical-scroll-proportion="0.14634146" vertical-offset="150" max-vertical-offset="1134">
               <folding />
             </state>
           </provider>
@@ -125,7 +107,7 @@
       <file leaf-file-name="PlanesMover.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+            <state line="18" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="378">
               <folding />
             </state>
           </provider>
@@ -188,8 +170,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,116 +208,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodINSALyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodINSALyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodINSALyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodINSALyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proxy.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodINSALyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proxy.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -348,9 +220,9 @@
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/java/lib/utils.json.jar!/" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -628,7 +500,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -647,12 +519,12 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -675,6 +547,41 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3682">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="27" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="19" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="2520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="20" selection-start="1138" selection-end="1149" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1134">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3682">
@@ -770,9 +677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.028455285" vertical-offset="0" max-vertical-offset="984">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.028455285" vertical-offset="0" max-vertical-offset="984" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java">
@@ -791,37 +696,29 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/ai/MoveAI.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.07113821" vertical-offset="0" max-vertical-offset="984">
-          <folding />
-        </state>
+        <state line="6" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.07113821" vertical-offset="0" max-vertical-offset="984" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/ai/AbstractAI.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="1" selection-start="360" selection-end="360" vertical-scroll-proportion="0.18495935" vertical-offset="0" max-vertical-offset="984" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="36" selection-start="3594" selection-end="3594" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="9" column="19" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/java/ExampleAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="41" selection-start="45" selection-end="55" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742">
-          <folding />
-        </state>
+        <state line="24" column="4" selection-start="426" selection-end="426" vertical-scroll-proportion="0.33300298" vertical-offset="0" max-vertical-offset="1009" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="20" selection-start="1138" selection-end="1149" vertical-scroll-proportion="-14.56" vertical-offset="0" max-vertical-offset="1134">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/ai/AbstractAI.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="154" selection-end="164" vertical-scroll-proportion="0.07113821" vertical-offset="0" max-vertical-offset="984">
+        <state line="22" column="25" selection-start="990" selection-end="990" vertical-scroll-proportion="0.14634146" vertical-offset="150" max-vertical-offset="1134">
           <folding />
         </state>
       </provider>
@@ -843,7 +740,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Python (CodINSALyon)|Python</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -855,6 +752,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Python 3.2.3 (/usr/bin/python3mu) interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -878,12 +776,23 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>CodINSALyon</last-edited>
+          <last-edited>Python|CodINSALyon</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Jython 2.2.1 (/usr/bin/jython)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
