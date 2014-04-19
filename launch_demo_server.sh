@@ -1,1 +1,1 @@
-java -jar api/server.jar france -42 player1 9090
+java -jar api/server.jar france -1 player1 9090

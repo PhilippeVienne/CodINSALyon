@@ -37,7 +37,8 @@ class BaseIA(AbstractAI):
 
     def save_snapshot(self):
         """
-        Save the current game snapshot. *self.game* have to be initiated before by calling *updateSimFrame*.
+        Save the current game snapshot. *self.game* have to be initiated before
+        by calling *updateSimFrame*.
         """
         self.all_bases = getAllBases()
         self.country = getCountry()
