@@ -65,10 +65,7 @@ def get_path(plane, bases, fuel=None, max_iteration=5):
     p1 = plane.position().x(), plane.position().y()
     p2 = nearest.position().x(), nearest.position().y()
     d = distance(p1, p2)
-    # print dir(Plane.Type.fuelConsumptionPerDistanceUnit)
-    # print Plane.Type.fuelConsumptionPerDistanceUnit.field
-    # print Plane.Type.fuelConsumptionPerDistanceUnit.toString()
-    # fuel -= d * Plane.Type.fuelConsumptionPerDistanceUnit
+    fuel -= d * plane.type.fuelConsumptionPerDistanceUnit
     if fuel < 0:
         fuel = 0
         return []
