@@ -14,17 +14,10 @@ sys.path.append('api/java/lib/servlet-api-2.5.jar')
 sys.path.append('api/java/lib/slf4j-api-1.5.8.jar')
 sys.path.append('api/java/lib/slf4j-log4j12-1.5.8.jar')
 sys.path.append('api/java/lib/utils.json.jar')
-#sys.path.append("proxy.jar")
 
 from ai import AbstractAI
-from proxy import Proxy
-import model.AbstractBase
-import model.Base
-import model.Coord
-import model.Plane
-import model.Plane.BasicView
 
-class BaseIA(AbstractAI):
+class BaseAI(AbstractAI):
     def __init__(self, ip, port):
         AbstractAI.__init__(self, ip, port)
 
@@ -81,5 +74,5 @@ if __name__ == "__main__":
         print "Usage : ./AI.py ip port"
         sys.exit()
 
-    ai = BaseIA(sys.argv[1], int(sys.argv[2]))
+    ai = BaseAI(sys.argv[1], int(sys.argv[2]))
     ai.think()
