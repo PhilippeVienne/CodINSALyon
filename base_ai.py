@@ -25,16 +25,20 @@ import model.Coord
 import model.Plane
 import model.Plane.BasicView
 from path import get_path
+from model.Plane import Type as PlaneType
+from command import BuildPlaneCommand
 
 class BaseIA(AbstractAI):
     def __init__(self, ip, port):
         AbstractAI.__init__(self, ip, port)
+        self.toggle = 0
 
     def think(self):
         while True:
             # print self.game
             self.game.updateSimFrame()
             self.save_snapshot()
+            self.try_build_plane()
             for p in self.my_planes.values():
                 print p, ":", get_path(p, self.all_bases.values())
             print "Update received"
@@ -58,6 +62,7 @@ class BaseIA(AbstractAI):
         self.not_o_and_v_bases = self.game.getNotOwnedAndVisibleBases()
         self.num_frame = self.game.getNumFrame()
         self.visible_bases = self.game.getVisibleBase()
+        self.my_production_line = self.country.productionLine()
 
         self.all_bases = dict((k, self.all_bases[k])
                               for k in self.all_bases)
@@ -75,6 +80,18 @@ class BaseIA(AbstractAI):
             self.not_o_and_v_bases[k]) for k in self.not_o_and_v_bases)
         self.visible_bases = dict((k, self.visible_bases[k])
                                   for k in self.visible_bases)
+        self.my_production_line = dict((k, self.my_production_line[k])
+                for k in self.my_production_line)
+
+
+    def try_build_plane(self):
+        print self.my_planes
+        if len(self.my_production_line) <= 1:
+            self.toggle ^= 1
+            # what type of plane to build?
+            my_type = [PlaneType.COMMERCIAL, PlaneType.MILITARY][self.toggle]
+            command = BuildPlaneCommand(my_type)
+            self.game.sendCommand(command)
 
     def end(self):
         pass
