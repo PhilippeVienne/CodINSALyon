@@ -18,11 +18,11 @@ sys.path.append('api/java/lib/utils.json.jar')
 
 from ai import AbstractAI
 from proxy import Proxy
-import model.AbstractBase;
-import model.Base;
-import model.Coord;
-import model.Plane;
-import model.Plane.BasicView;
+import model.AbstractBase
+import model.Base
+import model.Coord
+import model.Plane
+import model.Plane.BasicView
 
 class BaseIA(AbstractAI):
     def __init__(self, ip, port):
@@ -31,7 +31,7 @@ class BaseIA(AbstractAI):
     def think(self):
         while True:
             # print self.game
-            self.game.updateSimFrame();
+            self.game.updateSimFrame()
             self.save_snapshot()
             print "Update received"
 
@@ -39,18 +39,18 @@ class BaseIA(AbstractAI):
         """
         Save the current game snapshot. *self.game* have to be initiated before by calling *updateSimFrame*.
         """
-        self.all_bases = getAllBases()
-        self.country = getCountry()
-        self.ennemy_planes = getEnnemyPlanes()
-        self.killed_planes = getKilledPlanes()
-        self.map_height = getMapHeight()
-        self.map_width = getMapWidth()
-        self.my_bases = getMyBases()
-        self.my_planes = getMyPlanes()
-        self.not_o_and_not_v_bases = getNotOwnedAndNotVisibleBases()
-        self.not_o_and_v_bases = getNotOwnedAndVisibleBases()
-        self.num_frame = getNumFrame()
-        self.visible_bases = getVisibleBase()
+        self.all_bases = self.game.getAllBases()
+        self.country = self.game.getCountry()
+        self.ennemy_planes = self.game.getEnnemyPlanes()
+        self.killed_planes = self.game.getKilledPlanes()
+        self.map_height = self.game.getMapHeight()
+        self.map_width = self.game.getMapWidth()
+        self.my_bases = self.game.getMyBases()
+        self.my_planes = self.game.getMyPlanes()
+        self.not_o_and_not_v_bases = self.game.getNotOwnedAndNotVisibleBases()
+        self.not_o_and_v_bases = self.game.getNotOwnedAndVisibleBases()
+        self.num_frame = self.game.getNumFrame()
+        self.visible_bases = self.game.getVisibleBase()
 
         self.all_bases = {k: self.all_bases
                 for k in self.all_bases}
@@ -79,4 +79,4 @@ if __name__ == "__main__":
         sys.exit()
 
     ai = BaseIA(sys.argv[1], int(sys.argv[2]))
-    ai.think();
+    ai.think()
