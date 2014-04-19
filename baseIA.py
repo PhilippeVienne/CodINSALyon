@@ -21,21 +21,24 @@ from proxy import Proxy
 import model.AbstractBase
 import model.Base
 import model.Coord
-import model.Plane
 import model.Plane.BasicView
+from model.Plane import Type as PlaneType
+
+from command import BuildPlaneCommand
 
 class BaseIA(AbstractAI):
     def __init__(self, ip, port):
         AbstractAI.__init__(self, ip, port)
+        self.toggle = 0
 
     def think(self):
         while True:
             # print self.game
             self.game.updateSimFrame()
             self.save_snapshot()
+            self.try_build_plane()
             print "Update received"
 
-            print self.all_bases
 
     def save_snapshot(self):
         """
@@ -50,6 +53,7 @@ class BaseIA(AbstractAI):
         self.map_width = self.game.getMapWidth()
         self.my_bases = self.game.getMyBases()
         self.my_planes = self.game.getMyPlanes()
+        self.my_production_line = self.country.productionLine()
         self.not_o_and_not_v_bases = self.game.getNotOwnedAndNotVisibleBases()
         self.not_o_and_v_bases = self.game.getNotOwnedAndVisibleBases()
         self.num_frame = self.game.getNumFrame()
@@ -65,6 +69,8 @@ class BaseIA(AbstractAI):
                 for k in self.my_bases)
         self.my_planes = dict((k, self.my_planes[k])
                 for k in self.my_planes)
+        self.my_production_line = dict((k, self.my_production_line[k])
+                for k in self.my_production_line)
         self.not_owned_and_not_visible_bases = dict((k, self.not_o_and_not_v_bases[k])
                 for k in self.not_o_and_not_v_bases)
         self.not_owned_and_visible_bases = dict((k, self.not_o_and_v_bases[k])
@@ -74,6 +80,16 @@ class BaseIA(AbstractAI):
 
     def end(self):
         pass
+
+
+    def try_build_plane(self):
+        if len(self.my_production_line) <= 1:
+            self.toggle ^= 1
+            # what type of plane to build?
+            my_type = [PlaneType.COMMERCIAL, PlaneType.MILITARY][self.toggle]
+            command = BuildPlaneCommand(my_type)
+            self.game.sendCommand(command)
+
 
 if __name__ == "__main__":
     # Usage
