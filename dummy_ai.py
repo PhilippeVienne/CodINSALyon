@@ -3,7 +3,7 @@ from base_ai import BaseAI
 from pprint import pprint
 from model.Plane import State
 
-from command.MoveCommand import MoveCommand
+from command import MoveCommand
 
 class DummyAI(BaseAI):
     def __init__(self, ip, port):
@@ -23,8 +23,9 @@ class DummyAI(BaseAI):
             for p_id, plane in self.my_planes.iteritems():
                 if plane.state() == State.AT_AIRPORT:
                     try:
-                        closest_base = min(self.all_bases, key=lambda b : b.coord.distanceTo(plane))
-                        move_cmd = MoveCommand(plane, closest_base.coord)
+                        valid_bases = [b for b in self.all_bases.values() if b.position() != plane.position()]
+                        closest_base = min(valid_bases, key=lambda b : b.position().distanceTo(plane.position()))
+                        move_cmd = MoveCommand(plane, closest_base.position())
                         self.game.sendCommand(move_cmd)
                     except ValueError:
                         continue
