@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/api/java/lib/commons-codec-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/commons-lang3-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/httpclient-4.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/httpcore-4.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/java_websocket.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/junit-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/libthrift-0.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/log4j-1.2.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/servlet-api-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/slf4j-api-1.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/slf4j-log4j12-1.5.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/api/java/lib/utils.json.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/api/java/lib/libthrift-0.9.1-javadoc.jar!/" />
+      <root url="https://raw.githubusercontent.com/cod-insa/public-2014/master/doc/index.html" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
