@@ -5,18 +5,20 @@ from command import MoveCommand
 from model import Base
 from model import Coord
 from random import choice
+from path import get_path, distance
 
 class MoveAI(BaseAI):
+    destinations = {}
     def think(self):
         while True:
             self.game.updateSimFrame()
             self.save_snapshot()
             self.move()
     def move(self):
-        b = choice(self.all_bases.values())
-        planes = self.game.getMyPlanes()
-        for p in planes.valuesView():
-            self.game.sendCommand(MoveCommand(p, b.position()))
+        for p in self.my_planes.values():
+            res = get_path(p, self.all_bases.values())
+            if res:
+                self.game.sendCommand(MoveCommand(p, res[0]))
 
 if __name__ == "__main__":
     # Usage
