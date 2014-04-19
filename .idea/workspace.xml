@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66e3a945-3ed1-4b36-8ed9-6dae36ac04af" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CodINSALyon.iml" afterPath="$PROJECT_DIR$/.idea/CodINSALyon.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api" afterPath="$PROJECT_DIR$/api" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_ai.py" afterPath="$PROJECT_DIR$/base_ai.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -68,10 +69,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MoveAI.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MoveAI.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MoveAI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="61" selection-start="560" selection-end="560" vertical-scroll-proportion="0.27750248" vertical-offset="0" max-vertical-offset="1009">
+            <state line="26" column="18" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -82,7 +83,7 @@
       <file leaf-file-name="MoveCommand.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/MoveCommand.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="-5.04" vertical-offset="0" max-vertical-offset="280">
+            <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="294">
               <folding />
             </state>
           </provider>
@@ -91,7 +92,7 @@
       <file leaf-file-name="MapView.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/MapView.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="-12.32" vertical-offset="0" max-vertical-offset="1036">
+            <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -100,7 +101,7 @@
       <file leaf-file-name="CollectionView.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="9.36" vertical-offset="304" max-vertical-offset="1288">
+            <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1302">
               <folding />
             </state>
           </provider>
@@ -115,10 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base_ai.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="base_ai.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base_ai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="21" selection-start="2437" selection-end="2438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1176">
+            <state line="28" column="10" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.08424182" vertical-offset="307" max-vertical-offset="1316">
               <folding />
             </state>
           </provider>
@@ -127,7 +128,7 @@
       <file leaf-file-name="path.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/path.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+            <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
               <folding />
             </state>
           </provider>
@@ -157,15 +158,16 @@
         <option value="$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java" />
         <option value="$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java" />
         <option value="$PROJECT_DIR$/.testIA.py.swp" />
-        <option value="$PROJECT_DIR$/base_ai.py" />
         <option value="$PROJECT_DIR$/path.py" />
         <option value="$PROJECT_DIR$/MoveAI.py" />
+        <option value="$PROJECT_DIR$/base_ai.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="-3" />
+    <option name="width" value="1926" />
+    <option name="height" value="1083" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -200,7 +202,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -276,6 +277,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,7 +290,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/bin/jython" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15333334" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -573,7 +575,7 @@
     <option name="totallyTimeSpent" value="170000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="-3" y="0" width="1926" height="1083" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -625,6 +627,108 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MoveAI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="504">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/MoveCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="294">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/MapView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1302">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greedy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base_ai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="21" selection-start="2437" selection-end="2438" vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1316">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MoveAI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="61" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="504">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/MoveCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="294">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/MapView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1302">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greedy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base_ai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="21" selection-start="2437" selection-end="2438" vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1316">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -774,45 +878,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/path.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+        <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="9.36" vertical-offset="304" max-vertical-offset="1288">
+        <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1302">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/MapView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="-12.32" vertical-offset="0" max-vertical-offset="1036">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base_ai.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="21" selection-start="2437" selection-end="2438" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1176">
+        <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/MoveCommand.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="-5.04" vertical-offset="0" max-vertical-offset="280">
+        <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="294">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MoveAI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="560" selection-end="560" vertical-scroll-proportion="0.27750248" vertical-offset="0" max-vertical-offset="1009">
+        <state line="26" column="18" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base_ai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="10" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.08424182" vertical-offset="307" max-vertical-offset="1316">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -845,7 +949,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Jython 2.2.1 (/usr/bin/jython) interpreter library</last-edited>
+          <last-edited>Jython 2.7b1 (~/bin/jython) interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
