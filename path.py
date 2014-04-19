@@ -51,7 +51,7 @@ def get_path(plane, bases, fuel=None, max_iteration=5):
     max_iteration -- Int : Max iteration (default 5)
 
     Returns:
-    [(x, y)] : Path
+    [base1, base2] : Path
     """
     if max_iteration is 0:
         return []

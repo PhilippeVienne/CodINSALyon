@@ -18,7 +18,7 @@ class MoveAI(BaseAI):
         for p in self.my_planes.values():
             res = get_path(p, self.all_bases.values())
             if res:
-                self.game.sendCommand(MoveCommand(p, res[0]))
+                self.game.sendCommand(MoveCommand(p, res[0].position()))
 
 if __name__ == "__main__":
     # Usage
