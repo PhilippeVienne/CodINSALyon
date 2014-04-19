@@ -1,7 +1,9 @@
 import sys
 from base_ai import BaseAI
 from pprint import pprint
+from model.Plane import State
 
+from command.MoveCommand import MoveCommand
 
 class DummyAI(BaseAI):
     def __init__(self, ip, port):
@@ -16,8 +18,19 @@ class DummyAI(BaseAI):
             self.save_snapshot()
             print "# TURN %d : Update received" % turn
 
-            pprint(dir(self.my_planes.values()[0]))
-            pprint(dir(self.all_bases.values()[0]))
+            print self.my_planes
+            print [p.state() for _, p in self.my_planes.iteritems()]
+            for p_id, plane in self.my_planes.iteritems():
+                if plane.state() == State.AT_AIRPORT:
+                    try:
+                        closest_base = min(self.all_bases, key=lambda b : b.coord.distanceTo(plane))
+                        move_cmd = MoveCommand(plane, closest_base.coord)
+                        self.game.sendCommand(move_cmd)
+                    except ValueError:
+                        continue
+                print 'lol', plane
+                #if plane.fuelInHold
+
             print('-' * 80)
 
 
