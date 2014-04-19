@@ -26,7 +26,7 @@ import model.Plane
 import model.Plane.BasicView
 from path import get_path
 
-class BaseIA(AbstractAI):
+class BaseAI(AbstractAI):
     def __init__(self, ip, port):
         AbstractAI.__init__(self, ip, port)
 
@@ -84,5 +84,5 @@ if __name__ == "__main__":
         print "Usage : ./AI.py ip port"
         sys.exit()
 
-    ai = BaseIA(sys.argv[1], int(sys.argv[2]))
+    ai = BaseAI(sys.argv[1], int(sys.argv[2]))
     ai.think()
