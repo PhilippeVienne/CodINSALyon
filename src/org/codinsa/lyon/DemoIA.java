@@ -19,11 +19,7 @@ public class DemoIA extends AbstractAI
         while (true) {
             game.updateSimFrame();
 
-            // Do your stuff here
 
-            // Send your command whenever you want with game.sendCommand(new ...Command(...));
-
-            // Be carefull not to be timed out. If this is the case, your algorithm is too slow...
         }
     }
 
