@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66e3a945-3ed1-4b36-8ed9-6dae36ac04af" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GraphUtils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IntelligentStarterAI.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api" afterPath="$PROJECT_DIR$/api" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_ai.py" afterPath="$PROJECT_DIR$/base_ai.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CodINSALyon.iws" />
@@ -69,13 +69,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MoveAI.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MoveAI.py">
+      <file leaf-file-name="GraphUtils.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GraphUtils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="18" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+            <state line="31" column="148" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IntelligentStarterAI.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IntelligentStarterAI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="35" selection-start="553" selection-end="553" vertical-scroll-proportion="0.39820358" vertical-offset="0" max-vertical-offset="668">
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Plane.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/model/Plane.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="75" selection-start="3574" selection-end="3584" vertical-scroll-proportion="-7.1153846" vertical-offset="890" max-vertical-offset="1834">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,15 +102,6 @@
         <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/MoveCommand.class">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="294">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapView.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/MapView.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -116,10 +125,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base_ai.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base_ai.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base_ai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="10" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.08424182" vertical-offset="307" max-vertical-offset="1316">
+            <state line="53" column="20" selection-start="1812" selection-end="1819" vertical-scroll-proportion="0.0" vertical-offset="618" max-vertical-offset="1582">
               <folding />
             </state>
           </provider>
@@ -128,8 +137,13 @@
       <file leaf-file-name="path.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/path.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
-              <folding />
+            <state line="64" column="0" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="1246">
+              <folding>
+                <marker date="1397962959961" expanded="true" signature="159:217" placeholder="..." />
+                <marker date="1397962959961" expanded="true" signature="535:755" placeholder="&quot;&quot;&quot;Euclidian distance...&quot;&quot;&quot;" />
+                <marker date="1397962959961" expanded="true" signature="794:984" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1397962959961" expanded="true" signature="2047:2229" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,9 +172,12 @@
         <option value="$PROJECT_DIR$/src/org/codinsa/lyon/DemoIA.java" />
         <option value="$PROJECT_DIR$/src/org/codinsa/lyon/PlanesMover.java" />
         <option value="$PROJECT_DIR$/.testIA.py.swp" />
-        <option value="$PROJECT_DIR$/path.py" />
         <option value="$PROJECT_DIR$/MoveAI.py" />
+        <option value="$PROJECT_DIR$/path.py" />
         <option value="$PROJECT_DIR$/base_ai.py" />
+        <option value="$PROJECT_DIR$/DropMilitarsAI.py" />
+        <option value="$PROJECT_DIR$/GraphUtils.py" />
+        <option value="$PROJECT_DIR$/IntelligentStarterAI.py" />
       </list>
     </option>
   </component>
@@ -579,18 +596,19 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34545454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31016043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34545454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -600,7 +618,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -627,29 +644,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MoveAI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="504">
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/MoveCommand.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="294">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/MapView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="1050">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1302">
@@ -674,7 +668,12 @@
     <entry file="file://$PROJECT_DIR$/path.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
-          <folding />
+          <folding>
+            <marker date="1397962959961" expanded="true" signature="159:217" placeholder="..." />
+            <marker date="1397962959961" expanded="true" signature="535:755" placeholder="&quot;&quot;&quot;Euclidian distance...&quot;&quot;&quot;" />
+            <marker date="1397962959961" expanded="true" signature="794:984" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1397962959961" expanded="true" signature="2047:2229" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -682,7 +681,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="61" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="504">
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -725,7 +724,12 @@
     <entry file="file://$PROJECT_DIR$/path.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
-          <folding />
+          <folding>
+            <marker date="1397962959961" expanded="true" signature="159:217" placeholder="..." />
+            <marker date="1397962959961" expanded="true" signature="535:755" placeholder="&quot;&quot;&quot;Euclidian distance...&quot;&quot;&quot;" />
+            <marker date="1397962959961" expanded="true" signature="794:984" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1397962959961" expanded="true" signature="2047:2229" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -876,13 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/path.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1302">
@@ -904,19 +901,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MoveAI.py">
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/model/Coord.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="18" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+        <state line="19" column="16" selection-start="710" selection-end="715" vertical-scroll-proportion="0.25609756" vertical-offset="0" max-vertical-offset="2170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="1698" selection-end="1698" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="1246">
+          <folding>
+            <marker date="1397962959961" expanded="true" signature="159:217" placeholder="..." />
+            <marker date="1397962959961" expanded="true" signature="535:755" placeholder="&quot;&quot;&quot;Euclidian distance...&quot;&quot;&quot;" />
+            <marker date="1397962959961" expanded="true" signature="794:984" placeholder="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1397962959961" expanded="true" signature="2047:2229" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/model/Plane.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="75" selection-start="3574" selection-end="3584" vertical-scroll-proportion="-7.1153846" vertical-offset="890" max-vertical-offset="1834">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DropMilitarsAI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="49" selection-start="0" selection-end="1152" vertical-scroll-proportion="0.24975222" vertical-offset="0" max-vertical-offset="1009">
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MoveAI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="650" selection-end="650" vertical-scroll-proportion="0.32934132" vertical-offset="130" max-vertical-offset="798">
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/base_ai.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="10" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.08424182" vertical-offset="307" max-vertical-offset="1316">
+        <state line="53" column="20" selection-start="1812" selection-end="1819" vertical-scroll-proportion="0.0" vertical-offset="618" max-vertical-offset="1582">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="148" selection-start="940" selection-end="940" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IntelligentStarterAI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="35" selection-start="553" selection-end="553" vertical-scroll-proportion="0.39820358" vertical-offset="0" max-vertical-offset="668">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
