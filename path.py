@@ -50,7 +50,7 @@ def evaluation(plane, base):
     Real : Represent the rank to go to the position *base*.
     """
     d = distance(plane.position(), base.position())
-    fuel_ratio = plane.fuelInTank() / plane.type.tankCapacity
+    fuel_ratio = plane.fuelInTank() / plane.type.tankCapacity + 100
     if plane.ownerId() == base.ownerId(): # My base
         if fuel_ratio >= 0.23:
             return d + 1000
