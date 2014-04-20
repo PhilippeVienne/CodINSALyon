@@ -34,11 +34,11 @@ class MoveAI(BaseAI):
                     if distance(p.position(), res[0].position()) >= 0.5:
                         print 'move'
                         self.game.sendCommand(
-                                DropMilitarsCommand(p, res[0], 1))
+                                DropMilitarsCommand(p, res[0], 6))
                     else:
                         print 'drop', distance(p.position(), res[0].position())
                         self.game.sendCommand(
-                                DropMilitarsCommand(p, res[0], 1))
+                                DropMilitarsCommand(p, res[0], 6))
             print len(all_bases)
 
 if __name__ == "__main__":
