@@ -18,6 +18,7 @@ from metier import load_unit
 class MoveAI(BaseAI):
     destinations = {}
     initialized = False
+    help_needed = []
 
     def think(self):
         while True:
@@ -25,7 +26,9 @@ class MoveAI(BaseAI):
             self.save_snapshot()
             if not self.initialized:
                 self.init()
+            self.detect_attack()
             self.move()
+
 
     def init(self):
         """
@@ -66,7 +69,7 @@ class MoveAI(BaseAI):
             for axe in neigh_base.axes():
                 if axe.next() in self.my_bases.values():
                     print "DANGER!!!"
-                    print axe.next
+                    help_needed.append(axe.next().id)
 
 if __name__ == "__main__":
     # Usage
