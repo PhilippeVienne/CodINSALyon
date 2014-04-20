@@ -3,7 +3,7 @@
 
 import sys
 from base_ai import BaseAI
-from metier import ship_fuel
+from metier import ship_fuel, building_strategy
 
 class DummyAI(BaseAI):
     def __init__(self, ip, port):
@@ -22,6 +22,8 @@ class DummyAI(BaseAI):
             # print [p.state() for _, p in self.my_planes.iteritems()]
             for p_id, plane in self.my_planes.iteritems():
                 ship_fuel(self, plane)
+
+            building_strategy(self.game, self.my_production_line)
 
             print('-' * 80)
 
