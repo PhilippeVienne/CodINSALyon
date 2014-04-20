@@ -52,11 +52,11 @@ def evaluation(plane, base):
     d = distance(plane.position(), base.position())
     fuel_ratio = plane.fuelInTank() / plane.type.tankCapacity
     if plane.ownerId() == base.ownerId(): # My base
-        if fuel_ratio >= 0.21:
+        if fuel_ratio >= 0.23:
             return d + 1000
         fuel = context.my_bases[base.id()].fuelInStock()
         if fuel <= 0:
-            return d + 0.42 / 2.0
+            return (d + 1.0) * (fuel_ratio + 0.42)
         return d * fuel_ratio
     return d
 
