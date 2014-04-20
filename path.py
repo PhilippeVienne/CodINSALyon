@@ -20,6 +20,21 @@ def distance(p1, p2):
     """
     return math.sqrt((p1.x() - p2.x()) ** 2 + (p1.y() - p2.y()) ** 2)
 
+def is_near(p1, p2, threashold=0.1):
+    """
+    Indicate if *p1* and *p2* are close one of each other.
+
+    Arguments:
+    p1         -- Coord.View : First point
+    p2         -- Coord.View : First point
+    threashold -- Real : Distance threashold (default 0.1)
+
+    Returns:
+    Bool : True if they are close
+    """
+    return distance(p1, p2) < threashold
+
+
 def evaluation(plane, base):
     """
     Calculate the evaluation for the plane *plane* to go into the position of

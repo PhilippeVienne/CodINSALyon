@@ -10,7 +10,10 @@ from model import Base
 from model import Coord
 from model import Plane
 from random import choice
-from path import get_path, distance
+from path import get_path
+from path import distance
+from path import is_near
+from metier import loadUnit
 
 class MoveAI(BaseAI):
     destinations = {}
@@ -23,19 +26,10 @@ class MoveAI(BaseAI):
         all_bases = filter(lambda l: not l.isFriend(self.country),
                 self.all_bases.values())
         for p in self.my_planes.values():
-            if distance(p.position(), self.country.position()) <= 0.1 and \
-                    p.militaryInHold() < p.type.holdCapacity / 2.0:
-                print 'A la base', p.state()
-                if not p.state() == Plane.State.AT_AIRPORT:
-                    print 'atterissage'
-                    self.game.sendCommand(LandCommand(p, self.country))
-                else:
-                    print 'montez les gars', p.militaryInHold()
-                    self.game.sendCommand(
-                            ExchangeResourcesCommand(p, 10, 0, False))
+            if p.militaryInHold() < p.type.holdCapacity / 2.0:
+                loadUnit(self.game, p, self.country)
             else:
                 res = get_path(p, all_bases, None, 1)
-                # print res, distance(p.position(), res[0].position())
                 if res:
                     if distance(p.position(), res[0].position()) >= 0.5:
                         print 'move'
