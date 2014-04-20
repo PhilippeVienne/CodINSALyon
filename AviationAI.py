@@ -1,10 +1,11 @@
 import sys
-from model import Plane
-from model.Plane import Type
+
 
 from base_ai import BaseAI
 from command import BuildPlaneCommand
 
+from model.Plane import Type
+from model import Plane
 
 class AviationAI(BaseAI):
     destinations = {}
