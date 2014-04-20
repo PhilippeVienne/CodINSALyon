@@ -12,13 +12,28 @@ def distance(p1, p2):
     Euclidian distance
 
     Arguments:
-    p1 -- (x, y) : Tuple containing the x, y, of the first point.
-    p2 -- (x, y) : Tuple containing the x, y, of the second point.
+    p1 -- Coord.View : First point
+    p2 -- Coord.View : Second point
 
     Returns:
     Return the euclidian distance between *p1* and *p2*
     """
-    return math.sqrt((p1[0] - p2[0]) ** 2 + (p1[0] - p2[0]) ** 2)
+    return math.sqrt((p1.x() - p2.x()) ** 2 + (p1.y() - p2.y()) ** 2)
+
+def is_near(p1, p2, threashold=0.1):
+    """
+    Indicate if *p1* and *p2* are close one of each other.
+
+    Arguments:
+    p1         -- Coord.View : First point
+    p2         -- Coord.View : First point
+    threashold -- Real : Distance threashold (default 0.1)
+
+    Returns:
+    Bool : True if they are close
+    """
+    return distance(p1, p2) < threashold
+
 
 def evaluation(plane, base):
     """
@@ -32,9 +47,7 @@ def evaluation(plane, base):
     Returns:
     Real : Represent the rank to go to the position *base*.
     """
-    p1 = plane.position().x(), plane.position().y()
-    p2 = base.position().x(), base.position().y()
-    return distance(p1, p2)
+    return distance(plane.position(), base.position())
 
 def get_path(plane, bases, fuel=None, max_iteration=5):
     """
@@ -62,9 +75,7 @@ def get_path(plane, bases, fuel=None, max_iteration=5):
     i, nearest = sorted(enumerate(bases),
             key=lambda (_, b): evaluation(plane, b))[0]
     bases.pop(i)
-    p1 = plane.position().x(), plane.position().y()
-    p2 = nearest.position().x(), nearest.position().y()
-    d = distance(p1, p2)
+    d = distance(plane.position(), nearest.position())
     fuel -= d * plane.type.fuelConsumptionPerDistanceUnit
     if fuel < 0:
         fuel = 0
