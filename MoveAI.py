@@ -18,7 +18,6 @@ from metier import load_unit
 class MoveAI(BaseAI):
     destinations = {}
     initialized = False
-    help_needed = []
 
     def think(self):
         while True:
