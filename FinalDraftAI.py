@@ -1,5 +1,6 @@
 import sys
 from base_ai import BaseAI
+import logging
 
 from command import MoveCommand
 from command import LandCommand
@@ -83,4 +84,9 @@ if __name__ == "__main__":
         sys.exit()
 
     ai = FinalDraftAI(sys.argv[1], int(sys.argv[2]))
-    ai.think()
+    while True:
+        try:
+            ai.think()
+        except Exception as e:
+            logging.exception(e)
+            raise e

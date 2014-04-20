@@ -42,6 +42,14 @@ def conquer(game, plane, bases, min_fuel,
         else:
             max_mili = plane.militaryInHold()
             mili = min(nb_drop, max_mili)
+            try:
+                n = b.militaryGarrison()
+            except AttributeError:
+                n = 0
+
+            if n != 0:
+                mili = max(mili, n)
+            mili = min(mili, plane.militaryInHold())
             if not is_near(plane.position(), b.position(), 0.42):
                 game.sendCommand(
                         DropMilitarsCommand(plane, b, mili))
@@ -58,6 +66,8 @@ def deliver_petrol(game, plane, base, nb_mili, min_fuel):
         max_mili = plane.militaryInHold()
         fuel = max(min_fuel, max_fuel)
         mili = min(nb_mili, max_mili)
+        fuel = min(fuel, plane.fuelInHold())
+        mili = min(mili, plane.militaryInHold())
         print plane.id(), ': Deposit', fuel, 'fuel and', mili, 'mili'
         game.sendCommand(
                 ExchangeResourcesCommand(plane, -mili, -fuel, False))
