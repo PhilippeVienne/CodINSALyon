@@ -39,7 +39,7 @@ class ExpansionManagement:
         fuel_rate = 0.31
         for key in self.planes_id:
             if not key in self.base_ai.my_planes:
-                self.release(key)
+                self.planes_id.remove(key)
             else:
                 p = self.base_ai.my_planes[key]
                 if is_near(p.position(), self.base_ai.country.position(), 0.8) \
