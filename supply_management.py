@@ -14,7 +14,7 @@ class SupplyManagement:
         self.base_ai = base_ai
 
     def create_new_supplier(self):
-        self.base_ai.sendCommand(BuildPlaneCommand(Plane.Type.COMMERCIAL))
+        self.base_ai.try_build_plane(Plane.Type.COMMERCIAL)
 
     def push(self, plane):
         self.planes_id.append(plane.get_id())

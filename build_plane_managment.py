@@ -7,6 +7,5 @@ class BuildPlaneManagement:
 
     def think(self):
         builder = self.base_ai.manager_building
-        print(self.base_ai.my_planes.values()[-1:0])
         builder.create_new()
         #building_strategy(self.base_ai.game, self.base_ai.my_production_line)
