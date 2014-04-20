@@ -9,11 +9,13 @@ class SupplyManagement:
         self.base_ai = base_ai
 
     def assign(self, plane):
-        self.planes_id.add(plane.id)
+        self.planes_id.add(plane.id())
 
     def release(self, plane):
-        return self.planes_id.remove(plane.id)
+        return self.planes_id.remove(plane.id())
 
     def think(self):
         for key in self.planes_id:
+            if not key in self.base_ai.my_planes:
+                self.release(key)
             ship_fuel(self.base_ai, self.base_ai.my_planes[key])

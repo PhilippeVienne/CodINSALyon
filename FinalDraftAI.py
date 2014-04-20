@@ -44,7 +44,7 @@ class FinalDraftAI(BaseAI):
         self.managers = [self.supply_manager, self.build_plane_manager, self.expansion_manager]
         self.my_production_line = []
         self.my_planes = {}
-        self.toggle = 0
+        self.toggle = 1
 
     def think(self):
         while True:
@@ -67,7 +67,7 @@ class FinalDraftAI(BaseAI):
         if self.my_production_line:
             self.game.sendCommand(BuildPlaneCommand(self.my_production_line.pop()))
         else:
-            self.toggle ^= self.toggle
+            self.toggle ^= 1
             if self.toggle:
                 self.build_plane_manager.create(Plane.Type.COMMERCIAL, self.supply_manager)
             else:

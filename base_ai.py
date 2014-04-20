@@ -33,12 +33,14 @@ class BaseAI(AbstractAI):
         AbstractAI.__init__(self, ip, port)
         self.toggle = 0
         self.my_planes = {}
+        self.my_production_line = []
 
     def think(self):
         while True:
             # print self.game
             self.game.updateSimFrame()
             self.save_snapshot()
+
             # self.try_build_plane()
             # for p in self.my_planes.values():
             #     print p, ":", get_path(p, self.all_bases.values())
