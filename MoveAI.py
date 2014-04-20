@@ -37,10 +37,10 @@ class MoveAI(BaseAI):
                 res = get_path(p, all_bases, None, 1)
                 # print res, distance(p.position(), res[0].position())
                 if res:
-                    if distance(p.position(), res[0].position()) >= 0.3:
+                    if distance(p.position(), res[0].position()) >= 0.5:
                         print 'move'
                         self.game.sendCommand(
-                                MoveCommand(p, res[0].position()))
+                                DropMilitarsCommand(p, res[0], 1))
                     else:
                         print 'drop', distance(p.position(), res[0].position())
                         self.game.sendCommand(
