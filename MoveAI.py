@@ -35,7 +35,7 @@ class MoveAI(BaseAI):
                             ExchangeResourcesCommand(p, 10, 0, False))
             else:
                 res = get_path(p, all_bases, None, 1)
-                print res, distance(p.position(), res[0].position())
+                # print res, distance(p.position(), res[0].position())
                 if res:
                     if distance(p.position(), res[0].position()) >= 0.3:
                         print 'move'
