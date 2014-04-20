@@ -7,7 +7,7 @@ from path import is_near
 from model.Plane import State
 from command import ExchangeResourcesCommand, LandCommand
 
-def loadUnit(game, plane, base):
+def load_unit(game, plane, base):
     """
     Ask to load units in *plane* from *base*.
 
@@ -15,6 +15,7 @@ def loadUnit(game, plane, base):
     plane -- Plane to load
     base  -- Base where unit are taken
     """
+    print plane, "Getting", base.position()
     if plane.state() == Plane.State.AT_AIRPORT and \
             is_near(plane.position(), base.position()):
         try:
