@@ -5,6 +5,7 @@ from model import Plane
 from path import is_near
 from path import get_path
 
+import context
 from model.Plane import State, Type
 from command import MoveCommand
 from command import LandCommand
@@ -16,46 +17,79 @@ from model.Base import FullView
 from model.GameSettings import MINIMUM_BASE_GARRISON
 from model.GameSettings import MINIMUM_CAPTURE_GARRISON
 
-def conquer(game, plane, bases,
+def conquer(game, plane, bases, min_fuel,
         nb_drop=MINIMUM_BASE_GARRISON + MINIMUM_CAPTURE_GARRISON + 0.042):
     """
     Description of conquer. Pop element from *bases*. Give a copy if you want
     to prevent modification.
 
     Arguments:
-    game    -- Game to use
-    plane   -- Plane used to conquer
-    bases   -- Conquerable bases
-    nb_drop -- Number of militar units to drop
+    game        -- Game to use
+    plane       -- Plane used to conquer
+    bases       -- Conquerable bases
+    min_fuel    -- Amount of minimum fuel to release
+    nb_drop     -- Number of militar units to drop
     """
     res = get_path(plane, bases, None, 1)
     if res:
-        if not is_near(plane.position(), res[0].position(), 0.42):
-            game.sendCommand(
-                    DropMilitarsCommand(plane, res[0], nb_drop))
+        b = res[0]
+        if b.id() in context.my_bases:
+            b = context.my_bases[b.id()]
+            deliver_petrol(game, plane, b, nb_drop,
+                    b.fuelInStock() - min_fuel)
         else:
-            game.sendCommand(
-                    DropMilitarsCommand(plane, res[0], nb_drop))
+            max_mili = plane.militaryInHold()
+            mili = min(nb_drop, max_mili)
+            if not is_near(plane.position(), b.position(), 0.42):
+                game.sendCommand(
+                        DropMilitarsCommand(plane, b, mili))
+            else:
+                game.sendCommand(
+                        DropMilitarsCommand(plane, b, mili))
 
-def load_unit(game, plane, base):
+def deliver_petrol(game, plane, base, nb_mili, min_fuel):
+    if min_fuel < 0:
+        min_fuel = 0
+    if plane.state() == Plane.State.AT_AIRPORT and \
+            is_near(plane.position(), base.position()):
+        max_fuel = plane.fuelInHold()
+        max_mili = plane.militaryInHold()
+        fuel = max(min_fuel, max_fuel)
+        mili = min(nb_mili, max_mili)
+        print plane.id(), ': Deposit', fuel, 'fuel and', mili, 'mili'
+        game.sendCommand(
+                ExchangeResourcesCommand(plane, -mili, -fuel, False))
+    else:
+        game.sendCommand(LandCommand(plane, base))
+
+def bring_democracy(game, plane, bases, fuel_rate):
+    conquer(game, plane, bases, 4.2 * fuel_rate)
+
+def load_unit(game, plane, base, fuel_rate=0.0):
     """
     Ask to load units in *plane* from *base*.
 
     Arguments:
-    game  -- Game to use
-    plane -- Plane to load
-    base  -- Base where unit are taken
+    game       -- Game to use
+    plane      -- Plane to load
+    base       -- Base where unit are taken
+    fuel_rate  -- Rate of fuel to take
     """
     print plane, "Getting", base.position()
     if plane.state() == Plane.State.AT_AIRPORT and \
             is_near(plane.position(), base.position()):
         try:
-            nb = base.militaryGarrison()
+            min_fuel = base.fuelInStock()
         except AttributeError:
-            nb = 421337
-        game.sendCommand(ExchangeResourcesCommand(plane, min(
-                plane.type.holdCapacity - plane.militaryInHold(),
-                nb), 0, False))
+            min_fuel = 421337
+        try:
+            min_military = base.militaryGarrison()
+        except AttributeError:
+            min_military = 421337
+        fuel = min(min_fuel, plane.type.tankCapacity * fuel_rate)
+        military = min(min_military, plane.type.holdCapacity - fuel)
+        game.sendCommand(
+                ExchangeResourcesCommand(plane, military, fuel, False))
     else:
         game.sendCommand(LandCommand(plane, base))
 
@@ -74,6 +108,9 @@ def resource_potential(base, plane, game):
 def valid_position(plane, position):
     max_distance = float(plane.fuelInTank()) / plane.type.fuelConsumptionPerDistanceUnit
     return plane.position() != position and plane.position().distanceTo(position) < max_distance / 2.
+
+def need_democracy(plane, fuel_rate):
+    return plane.fuelInHold() + plane.militaryInHold() == 0
 
 def ship_fuel(game, plane, fuel_percent=0.9):
     # If the plane is in the country's airport
