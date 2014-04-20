@@ -17,5 +17,5 @@ class SupplyManagement:
     def think(self):
         for key in self.planes_id:
             if not key in self.base_ai.my_planes:
-                self.release(key)
+                self.planes_id.remove(key)
             ship_fuel(self.base_ai, self.base_ai.my_planes[key])
