@@ -9,6 +9,7 @@ from command import ExchangeResourcesCommand
 from model import Base
 from model import Coord
 from model import Plane
+from model.Base import FullView
 from random import choice
 from path import get_path
 from path import distance
@@ -40,7 +41,9 @@ class MoveAI(BaseAI):
         potential_bases = {}
         for k, l in self.visible_bases.items():
             print '#############', l.id(), l.ownerId(), self.country.ownerId()
-            if l.ownerId() != self.country.ownerId():
+            # if l.ownerId() != self.country.ownerId():
+            # if not isinstance(self.all_bases[l.id()], FullView):
+            if not l.id() in self.my_bases:
                 potential_bases[k] = self.all_bases[k]
         for k, l in self.all_bases.items():
             if not self.visited[k] and not k in potential_bases:
@@ -63,11 +66,11 @@ class MoveAI(BaseAI):
                     if not is_near(p.position(), res[0].position(), 0.3):
                         print 'move', p.id(), res[0].id()
                         self.game.sendCommand(
-                                DropMilitarsCommand(p, res[0], 6))
+                                DropMilitarsCommand(p, res[0], 1))
                     else:
                         print 'drop', p.id(), res[0].id()
                         self.game.sendCommand(
-                                DropMilitarsCommand(p, res[0], 6))
+                                DropMilitarsCommand(p, res[0], 1))
             print len(potential_bases)
 
 if __name__ == "__main__":

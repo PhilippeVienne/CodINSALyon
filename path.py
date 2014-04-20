@@ -47,7 +47,6 @@ def evaluation(plane, base):
     Returns:
     Real : Represent the rank to go to the position *base*.
     """
-    print 'D', plane.id(), base.id(), distance(plane.position(), base.position())
     return distance(plane.position(), base.position())
 
 def get_path(plane, bases, fuel=None, max_iteration=5):
@@ -75,7 +74,6 @@ def get_path(plane, bases, fuel=None, max_iteration=5):
         fuel = plane.fuelInTank()
     i, nearest = sorted(enumerate(bases),
             key=lambda (_, b): evaluation(plane, b))[0]
-    print 'Choice :', plane.id(), i, nearest, nearest.id()
     bases.pop(i)
     d = distance(plane.position(), nearest.position())
     fuel -= d * plane.type.fuelConsumptionPerDistanceUnit
