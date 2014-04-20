@@ -3,17 +3,39 @@
 
 from model import Plane
 from path import is_near
+from path import get_path
 
 from model.Plane import State, Type
 from command import ExchangeResourcesCommand, LandCommand
 from model.Base import FullView
 from command import BuildPlaneCommand
 
-def loadUnit(game, plane, base):
+def conquer(game, plane, bases, nb_drop=2):
+    """
+    Description of conquer. Pop element from *bases*. Give a copy if you want
+    to prevent modification.
+
+    Arguments:
+    game    -- Game to use
+    plane   -- Plane used to conquer
+    bases   -- Conquerable bases
+    nb_drop -- Number of militar units to drop
+    """
+    res = get_path(plane, bases, None, 1)
+    if res:
+        if not is_near(p.position(), res[0].position(), 0.3):
+            game.sendCommand(
+                    DropMilitarsCommand(plane, res[0], nb_drop))
+        else:
+            game.sendCommand(
+                    DropMilitarsCommand(plane, res[0], nb_drop))
+
+def load_unit(game, plane, base):
     """
     Ask to load units in *plane* from *base*.
 
     Arguments:
+    game  -- Game to use
     plane -- Plane to load
     base  -- Base where unit are taken
     """
