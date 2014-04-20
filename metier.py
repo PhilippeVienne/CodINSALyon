@@ -9,7 +9,7 @@ from command import ExchangeResourcesCommand, LandCommand
 from model.Base import FullView
 from command import BuildPlaneCommand
 
-def loadUnit(game, plane, base):
+def load_unit(game, plane, base):
     """
     Ask to load units in *plane* from *base*.
 

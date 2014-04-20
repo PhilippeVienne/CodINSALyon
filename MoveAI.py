@@ -9,6 +9,7 @@ from command import ExchangeResourcesCommand
 from model import Base
 from model import Coord
 from model import Plane
+from model.Base import FullView
 from random import choice
 from path import get_path
 from path import distance
@@ -34,31 +35,42 @@ class MoveAI(BaseAI):
         self.visited = dict([(b, False) for b in self.all_bases])
 
     def move(self):
-        potential_bases = dict(filter(lambda (_, l): not l.isFriend(self.country),
-                self.visible_bases.items()))
-        potential_bases.update(dict(filter(lambda (i, _): not self.visited[i],
-            self.all_bases.items())))
-        print filter(lambda (i, _): not self.visited[i],
-            self.all_bases.items())
-
-        for b in self.visible_bases.keys():
+        for b in self.visible_bases:
             self.visited[b] = True
 
+        potential_bases = {}
+        for k, l in self.visible_bases.items():
+            print '#############', l.id(), l.ownerId(), self.country.ownerId()
+            # if l.ownerId() != self.country.ownerId():
+            # if not isinstance(self.all_bases[l.id()], FullView):
+            if not l.id() in self.my_bases:
+                potential_bases[k] = self.all_bases[k]
+        for k, l in self.all_bases.items():
+            if not self.visited[k] and not k in potential_bases:
+                potential_bases[k] = l
+
+        for k in potential_bases:
+            print k,
+        print
+
+        # print potential_bases
+
+        ls_bases = potential_bases.values()
         for p in self.my_planes.values():
             if is_near(p.position(), self.country.position(), 0.8) and \
                     p.militaryInHold() < p.type.holdCapacity / 2.0:
                 load_unit(self.game, p, self.country)
             else:
-                res = get_path(p, potential_bases.values(), None, 1)
+                res = get_path(p, ls_bases, None, 1)
                 if res:
                     if not is_near(p.position(), res[0].position(), 0.3):
-                        print 'move'
+                        print 'move', p.id(), res[0].id()
                         self.game.sendCommand(
-                                DropMilitarsCommand(p, res[0], 6))
+                                DropMilitarsCommand(p, res[0], 1))
                     else:
-                        print 'drop', distance(p.position(), res[0].position())
+                        print 'drop', p.id(), res[0].id()
                         self.game.sendCommand(
-                                DropMilitarsCommand(p, res[0], 6))
+                                DropMilitarsCommand(p, res[0], 1))
             print len(potential_bases)
 
 if __name__ == "__main__":
