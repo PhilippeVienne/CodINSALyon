@@ -21,6 +21,8 @@ class MoveAI(BaseAI):
         while True:
             self.game.updateSimFrame()
             self.save_snapshot()
+            self.try_build_plane()
+            self.detect_attack()
             self.move()
     def move(self):
         all_bases = filter(lambda l: not l.isFriend(self.country),
@@ -40,6 +42,13 @@ class MoveAI(BaseAI):
                         self.game.sendCommand(
                                 DropMilitarsCommand(p, res[0], 6))
             print len(all_bases)
+
+    def detect_attack(self):
+        for neigh_base in self.not_owned_and_visible_bases.values():
+            for axe in neigh_base.axes():
+                if axe.next() in self.my_bases.values():
+                    print "DANGER!!!"
+                    print axe.next
 
 if __name__ == "__main__":
     # Usage
