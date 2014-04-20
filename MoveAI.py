@@ -28,6 +28,7 @@ class MoveAI(BaseAI):
                 self.init()
             self.move()
 
+
     def init(self):
         """
         Initialize the AI.
@@ -72,6 +73,7 @@ class MoveAI(BaseAI):
                         self.game.sendCommand(
                                 DropMilitarsCommand(p, res[0], 1))
             print len(potential_bases)
+
 
 if __name__ == "__main__":
     # Usage
