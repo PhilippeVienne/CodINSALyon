@@ -5,7 +5,7 @@ from model import Plane
 from path import is_near
 
 from model.Plane import State, Type
-from command import ExchangeResourcesCommand, LandCommand
+from command import ExchangeResourcesCommand, LandCommand, FillFuelTankCommand
 from model.Base import FullView
 from command import BuildPlaneCommand
 
@@ -31,7 +31,7 @@ def load_unit(game, plane, base):
         game.sendCommand(LandCommand(plane, base))
 
 def resource_potential(base, plane, game):
-    risk = 20
+    risk = 15
     if isinstance(base, FullView):
         risk = base.fuelInStock()
 
@@ -40,7 +40,7 @@ def resource_potential(base, plane, game):
     if planes_on_base:
         crowdedness += len(planes_on_base) ** 2
 
-    return base.position().distanceTo(plane.position()) + risk + 1. / crowdedness
+    return base.position().distanceTo(plane.position()) * risk
 
 def valid_position(plane, position):
     max_distance = float(plane.fuelInTank()) / plane.type.fuelConsumptionPerDistanceUnit
@@ -51,7 +51,7 @@ def ship_fuel(game, plane, fuel_percent=0.9):
     if plane.curBase() is None:
         return
 
-    valid_bases = [b for b in game.all_bases.values() if valid_position(plane, b.position())]
+    valid_bases = [b for b in game.all_bases.values() if valid_position(plane, b.position()) if b != plane.curBase()]
 
     if plane.curBase().position() == game.country.position() and plane.state() == State.AT_AIRPORT:
         if plane.fuelInHold() + plane.militaryInHold() == 0:
@@ -69,18 +69,25 @@ def ship_fuel(game, plane, fuel_percent=0.9):
         land_cmd = LandCommand(plane, game.country)
         game.game.sendCommand(land_cmd)
 
-    # If above another base, and have fuel to ship
+    # If above another base
     elif plane.curBase().position() != game.country.position():
-        if plane.fuelInHold() + plane.militaryInHold() != 0:
+        # If you have fuel (and maybe military) to ship
+        if plane.fuelInHold() != 0:
             exchange_cmd = ExchangeResourcesCommand(plane, -plane.militaryInHold(), -plane.fuelInHold(), False)
             game.game.sendCommand(exchange_cmd)
-        # If above another base, but without fuel
+        # If you don't have fuel
         else:
             best_base = game.country
             if valid_bases:
                 best_base = max(valid_bases, key=lambda b : resource_potential(b, plane, game))
-            move_cmd = LandCommand(plane, best_base)
-            game.game.sendCommand(move_cmd)
+
+            max_distance = float(plane.fuelInTank()) / plane.type.fuelConsumptionPerDistanceUnit
+            if plane.position().distanceTo(best_base.position()) > max_distance:
+                fill_cmd = FillFuelTankCommand(plane, plane.curBase().fuelInStock())
+                game.game.sendCommand(fill_cmd)
+            else:
+                move_cmd = LandCommand(plane, best_base)
+                game.game.sendCommand(move_cmd)
     else:
         return
 
