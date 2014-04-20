@@ -49,12 +49,13 @@ class MoveAI(BaseAI):
                 potential_bases[k] = l
 
         ls_bases = potential_bases.values()
+        ls_bases = self.all_bases.values()
         for p in self.my_planes.values():
             if is_near(p.position(), self.country.position(), 0.8) and \
                     p.militaryInHold() < p.type.holdCapacity / 2.0:
                 load_unit(self.game, p, self.country)
             else:
-                conquer(game, p, ls_bases, nb_drop=2)
+                conquer(self.game, p, ls_bases)
 
 if __name__ == "__main__":
     # Usage

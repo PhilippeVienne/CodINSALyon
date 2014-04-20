@@ -27,6 +27,7 @@ import model.Plane.BasicView
 from path import get_path
 from model.Plane import Type as PlaneType
 from command import BuildPlaneCommand
+import context
 
 class BaseAI(AbstractAI):
     def __init__(self, ip, port):
@@ -83,6 +84,16 @@ class BaseAI(AbstractAI):
         self.my_production_line = dict((k, self.my_production_line[k])
                 for k in self.my_production_line)
 
+        context.all_bases = self.all_bases
+        context.ennemy_planes = self.ennemy_planes
+        context.killed_planes = self.killed_planes
+        context.my_bases = self.my_bases
+        context.my_planes = self.my_planes
+        context.not_owned_and_not_visible_bases =  \
+                self.not_owned_and_not_visible_bases
+        context.not_owned_and_visible_bases = self.not_owned_and_visible_bases
+        context.visible_bases = self.visible_bases
+        context.my_production_line = self.my_production_line
 
     def try_build_plane(self):
         print self.my_planes
