@@ -28,15 +28,29 @@ class LoLAI(BaseAI):
             self.move()
 
     def move(self):
-        ls_bases = self.all_bases.values()
-        fuel_rate = 0.31
-        for p in self.my_planes.values():
-            if is_near(p.position(), self.country.position(), 0.8) and \
-                    need_democracy(p, fuel_rate):
-                load_unit(self.game, p, self.country, fuel_rate)
-            else:
-                bring_democracy(self.game, p, ls_bases, fuel_rate)
-                # conquer(self.game, p, ls_bases, fuel_rate)
+        pass
+        # ls_bases = self.all_bases.values()
+        # fuel_rate = 0.31
+        # fuel_rate = 0.0
+        # next_order = []
+        # for p in self.my_planes.values():
+        #     if is_near(p.position(), self.country.position(), 0.8) and \
+        #             need_democracy(p, fuel_rate):
+        #         load_unit(self.game, p, self.country, fuel_rate)
+        #     else:
+        #         next_order += [p]
+
+        # mili_plane = filter(lambda p: p.militaryInHold() > 0, next_order)
+        # rand_plane = filter(lambda p: p.militaryInHold() == 0, next_order)
+        # for p in mili_plane:
+        #     for b in ls_bases:
+        #         bring_democracy(self.game, p, ls_bases, fuel_rate)
+        #         order.add(p.id())
+
+        # for p in self.my_planes.values():
+        #     if p.id() in order:
+        #         bring_democracy(self.game, p, ls_bases, fuel_rate)
+
 
 if __name__ == "__main__":
     # Usage

@@ -20,7 +20,7 @@ from model.GameSettings import MINIMUM_BASE_GARRISON
 from model.GameSettings import MINIMUM_CAPTURE_GARRISON
 
 def conquer(game, plane, bases, min_fuel,
-        nb_drop=MINIMUM_BASE_GARRISON + MINIMUM_CAPTURE_GARRISON + 0.042):
+        nb_drop=MINIMUM_BASE_GARRISON + MINIMUM_CAPTURE_GARRISON + 0.042 + 4):
     """
     Description of conquer. Pop element from *bases*. Give a copy if you want
     to prevent modification.
