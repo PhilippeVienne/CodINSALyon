@@ -2,8 +2,13 @@ import sys
 from base_ai import BaseAI
 
 from command import MoveCommand
+from command import LandCommand
+from command import ExchangeResourcesCommand
+from command import DropMilitarsCommand
+from command import ExchangeResourcesCommand
 from model import Base
 from model import Coord
+from model import Plane
 from random import choice
 from path import get_path, distance
 
@@ -15,10 +20,32 @@ class MoveAI(BaseAI):
             self.save_snapshot()
             self.move()
     def move(self):
+        all_bases = filter(lambda l: not l.isFriend(self.country),
+                self.all_bases.values())
         for p in self.my_planes.values():
-            res = get_path(p, self.all_bases.values())
-            if res:
-                self.game.sendCommand(MoveCommand(p, res[0].position()))
+            if distance(p.position(), self.country.position()) <= 0.1 and \
+                    p.militaryInHold() < p.type.holdCapacity / 2.0:
+                print 'A la base', p.state()
+                if not p.state() == Plane.State.AT_AIRPORT:
+                    print 'atterissage'
+                    self.game.sendCommand(LandCommand(p, self.country))
+                else:
+                    print 'montez les gars', p.militaryInHold()
+                    self.game.sendCommand(
+                            ExchangeResourcesCommand(p, 10, 0, False))
+            else:
+                res = get_path(p, all_bases, None, 1)
+                print res, distance(p.position(), res[0].position())
+                if res:
+                    if distance(p.position(), res[0].position()) >= 0.3:
+                        print 'move'
+                        self.game.sendCommand(
+                                MoveCommand(p, res[0].position()))
+                    else:
+                        print 'drop', distance(p.position(), res[0].position())
+                        self.game.sendCommand(
+                                DropMilitarsCommand(p, res[0], 1))
+            print len(all_bases)
 
 if __name__ == "__main__":
     # Usage
