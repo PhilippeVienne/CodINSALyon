@@ -6,8 +6,8 @@ from path import is_near
 
 from model.Plane import State
 from command import ExchangeResourcesCommand, LandCommand
-
-def load_unit(game, plane, base):
+from model.Base import FullView
+def loadUnit(game, plane, base):
     """
     Ask to load units in *plane* from *base*.
 
@@ -28,30 +28,43 @@ def load_unit(game, plane, base):
     else:
         game.sendCommand(LandCommand(plane, base))
 
-def ship_fuel(game, plane):
+def fuel_risk(base, plane):
+    if isinstance(base, FullView):
+        return base.position().distanceTo(plane.position()) * base.fuelInStock()
+    else:
+        return base.position().distanceTo(plane.position()) * 20
+
+def valid_position(plane, position):
+    max_distance = float(plane.fuelInTank()) / plane.type.fuelConsumptionPerDistanceUnit
+    return plane.position() != position and plane.position().distanceTo(position) < max_distance / 2.
+
+def ship_fuel(game, plane, fuel_percent=0.9):
     # If the plane is in the country's airport
     if plane.curBase() is None:
         pass
-    elif plane.curBase().position() == game.country.position() and plane.state() == State.AT_AIRPORT:
 
+    elif plane.curBase().position() == game.country.position() and plane.state() == State.AT_AIRPORT:
         if plane.fuelInHold() == 0:
-            fuel = plane.type.tankCapacity
-            exchange_cmd = ExchangeResourcesCommand(plane, 0, fuel, False)
+            fuel = plane.type.tankCapacity * fuel_percent
+            military = plane.type.tankCapacity - fuel
+            exchange_cmd = ExchangeResourcesCommand(plane, military, fuel, False)
             game.game.sendCommand(exchange_cmd)
         else:
-            valid_bases = [b for b in game.all_bases.values() if b.position() != plane.position()]
-            closest_base = min(valid_bases, key=lambda b : b.position().distanceTo(plane.position()))
+            valid_bases = [b for b in game.all_bases.values() if valid_position(plane, b.position())]
+            closest_base = min(valid_bases, key=lambda b : fuel_risk(b, plane))
             move_cmd = LandCommand(plane, closest_base)
             game.game.sendCommand(move_cmd)
-    # If the plane is over the country (but not in its airport) and without fuel,
-    elif plane.curBase().position() == game.country.position() and plane.state() != State.AT_AIRPORT and plane.fuelInHold() == 0:
+
+    # If the plane is over the country (but not in its airport) and without fuel
+    elif plane.curBase().position() == game.country.position() and plane.state() != State.AT_AIRPORT\
+     and plane.fuelInHold() + plane.militaryInHold() == 0:
         land_cmd = LandCommand(plane, game.country)
         game.game.sendCommand(land_cmd)
 
     # If above another base, and have fuel to ship
     elif plane.curBase().position() != game.country.position():
-        if plane.fuelInHold() != 0:
-            exchange_cmd = ExchangeResourcesCommand(plane, 0, -plane.fuelInHold(), False)
+        if plane.fuelInHold() + plane.militaryInHold() != 0:
+            exchange_cmd = ExchangeResourcesCommand(plane, -plane.militaryInHold(), -plane.fuelInHold(), False)
             game.game.sendCommand(exchange_cmd)
         # If above another base, but without fuel
         else:

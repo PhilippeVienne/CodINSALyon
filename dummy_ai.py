@@ -4,6 +4,7 @@
 import sys
 from base_ai import BaseAI
 from metier import ship_fuel
+
 class DummyAI(BaseAI):
     def __init__(self, ip, port):
         super(BaseAI, self).__init__(ip, port)
