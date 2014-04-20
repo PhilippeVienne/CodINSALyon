@@ -3,11 +3,17 @@
 
 import sys
 from base_ai import BaseAI
+from model import Plane
+from build_plane_managment import BuildPlaneManagement
+from expansion_management import ExpansionManagement
 from metier import ship_fuel, building_strategy
+from supply_management import SupplyManagement
+
 
 class DummyAI(BaseAI):
     def __init__(self, ip, port):
         super(BaseAI, self).__init__(ip, port)
+        self.managers = [SupplyManagement(self), BuildPlaneManagement(self), ExpansionManagement(self)]
 
     def think(self):
         turn = 0
@@ -18,12 +24,8 @@ class DummyAI(BaseAI):
             self.save_snapshot()
             print "# TURN %d : Update received" % turn
 
-            # print self.my_planes
-            # print [p.state() for _, p in self.my_planes.iteritems()]
-            for p_id, plane in self.my_planes.iteritems():
-                ship_fuel(self, plane)
-
-            building_strategy(self.game, self.my_production_line)
+            for manager in self.managers:
+                manager.think()
 
             print('-' * 80)
 
