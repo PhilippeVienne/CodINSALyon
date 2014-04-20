@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66e3a945-3ed1-4b36-8ed9-6dae36ac04af" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api" afterPath="$PROJECT_DIR$/api" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base_ai.py" afterPath="$PROJECT_DIR$/base_ai.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CodINSALyon.iws" />
@@ -23,7 +20,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
@@ -59,9 +56,9 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_rules />
-    <ui_properties />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true" />
+    <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -69,39 +66,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MoveAI.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MoveAI.py">
+      <file leaf-file-name="Proxy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/java/src/proxy/Proxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="18" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoveCommand.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/MoveCommand.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="294">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8790">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapView.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/MapView.class">
+      <file leaf-file-name="metier.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/metier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="1050">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectionView.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1302">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,25 +89,70 @@
       <file leaf-file-name="greedy.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/greedy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="570">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base_ai.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base_ai.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base_ai.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="10" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.08424182" vertical-offset="307" max-vertical-offset="1316">
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1695">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="path.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/path.py">
+      <file leaf-file-name="AviationAI.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AviationAI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
+            <state vertical-scroll-proportion="0.43429846" vertical-offset="0" max-vertical-offset="898">
+              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Base.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/gen-py/model/Base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="510">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Proxy.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1230">
+              <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
+              <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,13 +185,17 @@
         <option value="$PROJECT_DIR$/path.py" />
         <option value="$PROJECT_DIR$/MoveAI.py" />
         <option value="$PROJECT_DIR$/base_ai.py" />
+        <option value="$PROJECT_DIR$/log4j.properties" />
+        <option value="$PROJECT_DIR$/launch.sh" />
+        <option value="$PROJECT_DIR$/AviationAI.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="width" value="1926" />
-    <option name="height" value="1083" />
+    <option name="x" value="-1" />
+    <option name="y" value="27" />
+    <option name="width" value="1922" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -190,7 +218,7 @@
     </ignored-problems>
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -202,7 +230,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -217,81 +244,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="CodINSALyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodINSALyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodINSALyon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="com.jetbrains.python.documentation.PythonDocumentationConfigurable" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/bin/jython" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/java/lib/proxy.jar!/" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15333334" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -307,14 +281,14 @@
       <recent name="$PROJECT_DIR$/codinsalyon" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client sur localhost:8080">
+  <component name="RunManager" selected="JavaScript Debug.network.thrift">
     <configuration default="false" name="iadebile (8080)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/jython2.7b1/bin/jython" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -344,6 +318,16 @@
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -413,6 +397,134 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CodINSALyon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -453,8 +565,26 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -468,24 +598,19 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
       <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CodINSALyon" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -508,46 +633,56 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Client sur localhost:8080" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="org.codinsa.lyon.DemoIA" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="localhost 8080" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CodINSALyon" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.Client sur localhost:8080" />
-      <item index="1" class="java.lang.String" itemvalue="Python.iadebile (8080)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test" />
+    <configuration default="false" name="Run IA on 8080" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="-Dpython.security.respectJavaAccessibility=false" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/jython2.7b1/bin/jython" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CodINSALyon" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baseIA.py" />
+      <option name="PARAMETERS" value="127.0.0.1 8080" />
+      <method />
+    </configuration>
+    <configuration default="false" name="network.thrift" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://jar:/home/pvienne/CodINSALyon/api/java/lib/proxy.jar!/network.thrift">
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.Run IA on 8080" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.network.thrift" />
+      <item index="2" class="java.lang.String" itemvalue="Python.iadebile (8080)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -555,6 +690,8 @@
       <created>1397916181353</created>
       <updated>1397916181353</updated>
       <workItem from="1397941273082" duration="170000" />
+      <workItem from="1397959516713" duration="4204000" />
+      <workItem from="1397964559081" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="Ignore PyCharm project files">
       <created>1397916238643</created>
@@ -572,42 +709,45 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170000" />
+    <option name="totallyTimeSpent" value="4385000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1926" height="1083" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
+    <editor active="false" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34545454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31016043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34545454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19222577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31712472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -626,297 +766,384 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MoveAI.py">
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/model/Coord.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="504">
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/MoveCommand.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="294">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/MapView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="1050">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1302">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greedy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base_ai.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="21" selection-start="2437" selection-end="2438" vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1316">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/path.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MoveAI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="504">
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/MoveCommand.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="294">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/MapView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="1050">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1302">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greedy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base_ai.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="21" selection-start="2437" selection-end="2438" vertical-scroll-proportion="0.0" vertical-offset="826" max-vertical-offset="1316">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/path.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2340">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3945">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="2700">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1215">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3682">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="2520">
+          <caret line="9" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1134">
+          <caret line="27" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3682">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/EmptyAI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/CommandSender.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/model/AbstractBase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/gen-py/model/Base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib64/python2.7/threading.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/gen-py/EmptyAI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/IncomingData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/model/Plane.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/thrift/Thrift.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.028455285" vertical-offset="0" max-vertical-offset="984">
+          <caret line="2" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/ai/MoveAI.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.07113821" vertical-offset="0" max-vertical-offset="984">
+          <caret line="6" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/java/ExampleAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.33300298" vertical-offset="0" max-vertical-offset="1009">
+          <caret line="24" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/java/ConsoleAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="2700">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/gen-py/Proxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/ai/AbstractAI.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state vertical-scroll-proportion="0.08389262" vertical-offset="0" max-vertical-offset="894">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/greedy.py">
+    <entry file="file://$PROJECT_DIR$/launch.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1009">
+        <state vertical-scroll-proportion="0.048966266" vertical-offset="0" max-vertical-offset="919">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/model/Coord.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="2340">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/model/Plane.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1980">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/Command.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="360">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/ExchangeResourcesCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="345">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/FillFuelTankCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="315">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/CancelRequestCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/java/src/proxy/IncomingData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1695">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/java/src/proxy/CommandSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3180">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="17.32" vertical-offset="508" max-vertical-offset="1380">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/network.thrift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36789298" vertical-offset="0" max-vertical-offset="3480">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/tojar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/model/AbstractBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08389262" vertical-offset="0" max-vertical-offset="894">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/java/src/proxy/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7695">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/path.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1092">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/CollectionView.class">
+    <entry file="file://$PROJECT_DIR$/greedy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="1302">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/common/MapView.class">
+    <entry file="file://$PROJECT_DIR$/api/gen-py/EmptyAI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="14" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="1050">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/gen-py/model/Base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/proxy/Proxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1230">
+          <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/api/java/lib/proxy.jar!/command/MoveCommand.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="334" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="294">
+        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MoveAI.py">
+    <entry file="file://$PROJECT_DIR$/FuelDelivery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="18" selection-start="686" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base_ai.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="10" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.08424182" vertical-offset="307" max-vertical-offset="1316">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1695">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch_server.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.025773196" vertical-offset="0" max-vertical-offset="582">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AviationAI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43429846" vertical-offset="0" max-vertical-offset="898">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -949,7 +1176,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Jython 2.7b1 (~/bin/jython) interpreter library</last-edited>
+          <last-edited>Jython 2.7b1 (~/jython2.7b1/bin/jython) interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -961,7 +1188,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Python 2.7.3 (/usr/bin/python2.7)</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -985,7 +1212,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>Jython 2.7b1 (~/bin/jython)</last-edited>
+          <last-edited>Jython 2.2.1 (/usr/bin/jython)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
