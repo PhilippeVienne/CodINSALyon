@@ -84,14 +84,14 @@ class BaseAI(AbstractAI):
                 for k in self.my_production_line)
 
 
-    def try_build_plane(self):
-        print self.my_planes
-        if len(self.my_production_line) <= 1:
+    def try_build_plane(self, plane_type=None):
+        if len(self.my_production_line) < 1:
             self.toggle ^= 1
             # what type of plane to build?
-            my_type = [PlaneType.COMMERCIAL, PlaneType.MILITARY][self.toggle]
-            command = BuildPlaneCommand(my_type)
-            self.game.sendCommand(command)
+            if not plane_type:
+                plane_type = [PlaneType.COMMERCIAL, PlaneType.MILITARY][self.toggle]
+            self.game.sendCommand(BuildPlaneCommand(plane_type))
+
 
     def end(self):
         pass
