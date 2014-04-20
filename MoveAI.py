@@ -26,7 +26,6 @@ class MoveAI(BaseAI):
             self.save_snapshot()
             if not self.initialized:
                 self.init()
-            self.detect_attack()
             self.move()
 
 
@@ -75,12 +74,6 @@ class MoveAI(BaseAI):
                                 DropMilitarsCommand(p, res[0], 1))
             print len(potential_bases)
 
-    def detect_attack(self):
-        for neigh_base in self.not_owned_and_visible_bases.values():
-            for axe in neigh_base.axes():
-                if axe.next() in self.my_bases.values():
-                    print "DANGER!!!"
-                    help_needed.append(axe.next().id)
 
 if __name__ == "__main__":
     # Usage
