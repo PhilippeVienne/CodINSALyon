@@ -56,23 +56,22 @@ class FinalDraftAI(BaseAI):
             for manager in self.managers:
                 manager.think()
             self.try_build_plane()
+
     def init(self):
         """
         Initialize the AI.
         """
         self.visited = dict([(b, False) for b in self.all_bases])
 
-
     def try_build_plane(self):
         if self.my_production_line:
             self.game.sendCommand(BuildPlaneCommand(self.my_production_line.pop()))
         else:
-            self.toggle ^= 1
+            self.toggle = 1
             if self.toggle:
                 self.build_plane_manager.create(Plane.Type.COMMERCIAL, self.supply_manager)
             else:
                 self.build_plane_manager.create(Plane.Type.MILITARY, self.attack_manager)
-
 
     def move(self):
         pass

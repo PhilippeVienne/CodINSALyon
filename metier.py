@@ -78,11 +78,9 @@ def valid_position(plane, position):
     return plane.position() != position and plane.position().distanceTo(position) < max_distance / 2.
 
 def ship_fuel(game, plane, fuel_percent=0.9):
-    print 'SHIP FUEL', game, plane
     # If the plane is in the country's airport
     if plane.curBase() is None:
         return
-    print ' => passed'
     valid_bases = [b for b in game.all_bases.values() if valid_position(plane, b.position()) if b != plane.curBase()]
 
     if plane.curBase().position() == game.country.position() and plane.state() == State.AT_AIRPORT:
