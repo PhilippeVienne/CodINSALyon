@@ -85,7 +85,7 @@ def get_path(plane, bases, fuel=None, max_iteration=5):
         fuel = plane.fuelInTank()
     i, nearest = sorted(enumerate(bases),
             key=lambda (_, b): evaluation(plane, b))[0]
-    bases.pop(i)
+    bases.release(i)
     d = distance(plane.position(), nearest.position())
     fuel -= d * plane.type.fuelConsumptionPerDistanceUnit
     if fuel < 0:
