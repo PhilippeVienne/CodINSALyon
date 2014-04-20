@@ -21,15 +21,30 @@ from metier import load_unit
 from supply_management import SupplyManagement
 
 
-class MoveAI(BaseAI):
+class AttackManager(object):
+    def __init__(self, base_ai):
+        self.base_ai = base_ai
+        self.plane_ids = set()
+    def assign(self, plane):
+        self.plane_ids.add(plane.id)
+
+    def release(self, plane):
+        self.plane_ids.remove(plane.id)
+
+class FinalDraftAI(BaseAI):
     destinations = {}
     initialized = False
 
     def __init__(self, ip, port):
         super(BaseAI, self).__init__(ip, port)
-        self.managers = [SupplyManagement(self), BuildPlaneManagement(self), ExpansionManagement(self)]
-        self.manager_building = self.managers[0]
+        self.expansion_manager = ExpansionManagement(self)
+        self.supply_manager = SupplyManagement(self)
+        self.build_plane_manager = BuildPlaneManagement(self)
+        self.attack_manager = AttackManager(self)
+        self.managers = [self.supply_manager, self.build_plane_manager, self.expansion_manager]
         self.my_production_line = []
+        self.my_planes = {}
+        self.toggle = 0
 
     def think(self):
         while True:
@@ -48,53 +63,19 @@ class MoveAI(BaseAI):
         self.visited = dict([(b, False) for b in self.all_bases])
 
 
-    def try_build_plane(self, plane_type=None):
-        if len(self.my_production_line) < 1:
-            self.toggle ^= 1
-            # what type of plane to build?
-            if not plane_type:
-                plane_type = [Plane.Type.COMMERCIAL, Plane.Type.MILITARY][self.toggle]
-            self.game.sendCommand(BuildPlaneCommand(plane_type))
+    def try_build_plane(self):
+        if self.my_production_line:
+            self.game.sendCommand(BuildPlaneCommand(self.my_production_line.pop()))
+        else:
+            self.toggle ^= self.toggle
+            if self.toggle:
+                self.build_plane_manager.create(Plane.Type.COMMERCIAL, self.supply_manager)
+            else:
+                self.build_plane_manager.create(Plane.Type.MILITARY, self.attack_manager)
 
 
     def move(self):
-        for b in self.visible_bases:
-            self.visited[b] = True
-
-        potential_bases = {}
-        for k, l in self.visible_bases.items():
-            print '#############', l.id(), l.ownerId(), self.country.ownerId()
-            # if l.ownerId() != self.country.ownerId():
-            # if not isinstance(self.all_bases[l.id()], FullView):
-            if not l.id() in self.my_bases:
-                potential_bases[k] = self.all_bases[k]
-        for k, l in self.all_bases.items():
-            if not self.visited[k] and not k in potential_bases:
-                potential_bases[k] = l
-
-        for k in potential_bases:
-            print k,
-        print
-
-        # print potential_bases
-
-        ls_bases = potential_bases.values()
-        for p in self.my_planes.values():
-            if is_near(p.position(), self.country.position(), 0.8) and \
-                            p.militaryInHold() < p.type.holdCapacity / 2.0:
-                load_unit(self.game, p, self.country)
-            else:
-                res = get_path(p, ls_bases, None, 1)
-                if res:
-                    if not is_near(p.position(), res[0].position(), 0.3):
-                        print 'move', p.id(), res[0].id()
-                        self.game.sendCommand(
-                            DropMilitarsCommand(p, res[0], 1))
-                    else:
-                        print 'drop', p.id(), res[0].id()
-                        self.game.sendCommand(
-                            DropMilitarsCommand(p, res[0], 1))
-            print len(potential_bases)
+        pass
 
 if __name__ == "__main__":
     # Usage
@@ -102,5 +83,5 @@ if __name__ == "__main__":
         print "Usage : ./AI.py ip port"
         sys.exit()
 
-    ai = MoveAI(sys.argv[1], int(sys.argv[2]))
+    ai = FinalDraftAI(sys.argv[1], int(sys.argv[2]))
     ai.think()

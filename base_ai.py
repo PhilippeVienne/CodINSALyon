@@ -25,7 +25,6 @@ import model.Coord
 import model.Plane
 import model.Plane.BasicView
 from path import get_path
-from model.Plane import Type as PlaneType
 from command import BuildPlaneCommand
 import context
 
@@ -33,6 +32,7 @@ class BaseAI(AbstractAI):
     def __init__(self, ip, port):
         AbstractAI.__init__(self, ip, port)
         self.toggle = 0
+        self.my_planes = {}
 
     def think(self):
         while True:
@@ -57,12 +57,12 @@ class BaseAI(AbstractAI):
         self.map_height = self.game.getMapHeight()
         self.map_width = self.game.getMapWidth()
         self.my_bases = self.game.getMyBases()
+        self.my_planes_before = self.my_planes
         self.my_planes = self.game.getMyPlanes()
         self.not_o_and_not_v_bases = self.game.getNotOwnedAndNotVisibleBases()
         self.not_o_and_v_bases = self.game.getNotOwnedAndVisibleBases()
         self.num_frame = self.game.getNumFrame()
         self.visible_bases = self.game.getVisibleBase()
-        self.my_production_line = self.country.productionLine()
 
         self.all_bases = dict((k, self.all_bases[k])
                               for k in self.all_bases)
