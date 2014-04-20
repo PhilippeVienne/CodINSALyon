@@ -29,7 +29,7 @@ class LoLAI(BaseAI):
 
     def move(self):
         ls_bases = self.all_bases.values()
-        fuel_rate = 0.26
+        fuel_rate = 0.28
         for p in self.my_planes.values():
             if is_near(p.position(), self.country.position(), 0.8) and \
                     need_democracy(p, fuel_rate):
