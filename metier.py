@@ -30,12 +30,17 @@ def loadUnit(game, plane, base):
     else:
         game.sendCommand(LandCommand(plane, base))
 
-def resource_potential(base, plane):
+def resource_potential(base, plane, game):
     risk = 20
     if isinstance(base, FullView):
         risk = base.fuelInStock()
 
-    return base.position().distanceTo(plane.position()) * risk
+    planes_on_base = [p for p in game.my_planes.itervalues() if p.position() == base.position()]
+    crowdedness = 1.0
+    if planes_on_base:
+        crowdedness += len(planes_on_base) ** 2
+
+    return base.position().distanceTo(plane.position()) + risk + 1. / crowdedness
 
 def valid_position(plane, position):
     max_distance = float(plane.fuelInTank()) / plane.type.fuelConsumptionPerDistanceUnit
@@ -49,13 +54,13 @@ def ship_fuel(game, plane, fuel_percent=0.9):
     valid_bases = [b for b in game.all_bases.values() if valid_position(plane, b.position())]
 
     if plane.curBase().position() == game.country.position() and plane.state() == State.AT_AIRPORT:
-        if plane.fuelInHold() == 0:
+        if plane.fuelInHold() + plane.militaryInHold() == 0:
             fuel = plane.type.tankCapacity * fuel_percent
             military = plane.type.tankCapacity - fuel
             exchange_cmd = ExchangeResourcesCommand(plane, military, fuel, False)
             game.game.sendCommand(exchange_cmd)
         else:
-            closest_base = min(valid_bases, key=lambda b : resource_potential(b, plane))
+            closest_base = min(valid_bases, key=lambda b : resource_potential(b, plane, game))
             move_cmd = LandCommand(plane, closest_base)
             game.game.sendCommand(move_cmd)
     # If the plane is over the country (but not in its airport) and without fuel
@@ -73,7 +78,7 @@ def ship_fuel(game, plane, fuel_percent=0.9):
         else:
             best_base = game.country
             if valid_bases:
-                best_base = max(valid_bases, key=lambda b : resource_potential(b, plane))
+                best_base = max(valid_bases, key=lambda b : resource_potential(b, plane, game))
             move_cmd = LandCommand(plane, best_base)
             game.game.sendCommand(move_cmd)
     else:
