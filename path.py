@@ -6,6 +6,8 @@ sys.path.append('api/java/lib/proxy.jar')
 
 import math
 from model import Plane
+from model import Base
+import context
 
 def distance(p1, p2):
     """
@@ -47,7 +49,16 @@ def evaluation(plane, base):
     Returns:
     Real : Represent the rank to go to the position *base*.
     """
-    return distance(plane.position(), base.position())
+    d = distance(plane.position(), base.position())
+    fuel_ratio = plane.fuelInTank() / plane.type.tankCapacity
+    if plane.ownerId() == base.ownerId(): # My base
+        if fuel_ratio >= 0.42:
+            return d + 1000
+        fuel = context.my_bases[base.id()].fuelInStock()
+        if fuel <= 0:
+            return d + 0.42
+        return d * fuel_ratio
+    return d
 
 def get_path(plane, bases, fuel=None, max_iteration=5):
     """
