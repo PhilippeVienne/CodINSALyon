@@ -55,8 +55,8 @@ def ship_fuel(game, plane, fuel_percent=0.9):
 
     if plane.curBase().position() == game.country.position() and plane.state() == State.AT_AIRPORT:
         if plane.fuelInHold() + plane.militaryInHold() == 0:
-            fuel = plane.type.tankCapacity * fuel_percent
-            military = plane.type.tankCapacity - fuel
+            fuel = plane.type.holdCapacity * fuel_percent
+            military = plane.type.holdCapacity - fuel
             exchange_cmd = ExchangeResourcesCommand(plane, military, fuel, False)
             game.game.sendCommand(exchange_cmd)
         else:
