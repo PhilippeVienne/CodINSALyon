@@ -7,6 +7,13 @@ class FuelDelivery:
         self.plane = plane
         self.base_ai = base_ai
 
-    def fullfill(self, base):
+    def fulfill(self, base, fuel):
         basePosition = base.get_position()
-        base_ai.game.send_command(MoveCommand(self.plane, self.base_ai.))
+        self.base_ai.game.send_command(MoveCommand(self.plane, basePosition))
+        self.base_ai.game.send_command(ExchangeResourcesCommand(self.plane, 0, -fuel, False))
+
+    def minimal_fuel_to_go(self, base):
+        return ( 1 )*base.get_position().distanceTo(self.plane.get_position())
+
+    def seliver_max_fuel(self, base):
+        return fulfill(base,)
