@@ -3,17 +3,46 @@
 
 from model import Plane
 from path import is_near
+from path import get_path
 
 from model.Plane import State, Type
-from command import ExchangeResourcesCommand, LandCommand
-from model.Base import FullView
+from command import MoveCommand
+from command import LandCommand
+from command import ExchangeResourcesCommand
+from command import DropMilitarsCommand
+from command import ExchangeResourcesCommand
 from command import BuildPlaneCommand
+from model.Base import FullView
+from model.GameSettings import MINIMUM_BASE_GARRISON
+from model.GameSettings import MINIMUM_CAPTURE_GARRISON
+
+def conquer(game, plane, bases,
+        nb_drop=MINIMUM_BASE_GARRISON + MINIMUM_CAPTURE_GARRISON + 0.042):
+    """
+    Description of conquer. Pop element from *bases*. Give a copy if you want
+    to prevent modification.
+
+    Arguments:
+    game    -- Game to use
+    plane   -- Plane used to conquer
+    bases   -- Conquerable bases
+    nb_drop -- Number of militar units to drop
+    """
+    res = get_path(plane, bases, None, 1)
+    if res:
+        if not is_near(plane.position(), res[0].position(), 0.42):
+            game.sendCommand(
+                    DropMilitarsCommand(plane, res[0], nb_drop))
+        else:
+            game.sendCommand(
+                    DropMilitarsCommand(plane, res[0], nb_drop))
 
 def load_unit(game, plane, base):
     """
     Ask to load units in *plane* from *base*.
 
     Arguments:
+    game  -- Game to use
     plane -- Plane to load
     base  -- Base where unit are taken
     """
