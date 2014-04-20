@@ -37,9 +37,10 @@ class ExpansionManagement:
     def move(self):
         ls_bases = self.base_ai.all_bases.values()
         fuel_rate = 0.31
+        remove = []
         for key in self.planes_id:
             if not key in self.base_ai.my_planes:
-                self.planes_id.remove(key)
+                remove += [key]
             else:
                 p = self.base_ai.my_planes[key]
                 if is_near(p.position(), self.base_ai.country.position(), 0.8) \
@@ -48,3 +49,5 @@ class ExpansionManagement:
                             p, self.base_ai.country, fuel_rate)
                 else:
                     bring_democracy(self.base_ai.game, p, ls_bases, fuel_rate)
+        for key in remove:
+            self.planes_id.remove(key)

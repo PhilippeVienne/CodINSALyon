@@ -69,7 +69,7 @@ class FinalDraftAI(BaseAI):
         else:
             self.toggle = 1
             if self.toggle:
-                self.build_plane_manager.create(Plane.Type.COMMERCIAL, self.supply_manager)
+                self.build_plane_manager.create(Plane.Type.COMMERCIAL, self.expansion_manager)
             else:
                 self.build_plane_manager.create(Plane.Type.MILITARY, self.attack_manager)
 
