@@ -25,7 +25,6 @@ import model.Coord
 import model.Plane
 import model.Plane.BasicView
 from path import get_path
-from model.Plane import Type as PlaneType
 from command import BuildPlaneCommand
 import context
 
@@ -33,18 +32,20 @@ class BaseAI(AbstractAI):
     def __init__(self, ip, port):
         AbstractAI.__init__(self, ip, port)
         self.toggle = 0
+        self.my_planes = {}
+        self.my_production_line = []
 
     def think(self):
         while True:
             # print self.game
             self.game.updateSimFrame()
             self.save_snapshot()
-            self.try_build_plane()
-            for p in self.my_planes.values():
-                print p, ":", get_path(p, self.all_bases.values())
-            print "Update received"
 
-            print self.all_bases
+            # self.try_build_plane()
+            # for p in self.my_planes.values():
+            #     print p, ":", get_path(p, self.all_bases.values())
+            # print "Update received"
+            # print self.all_bases
 
     def save_snapshot(self):
         """
@@ -58,12 +59,12 @@ class BaseAI(AbstractAI):
         self.map_height = self.game.getMapHeight()
         self.map_width = self.game.getMapWidth()
         self.my_bases = self.game.getMyBases()
+        self.my_planes_before = self.my_planes
         self.my_planes = self.game.getMyPlanes()
         self.not_o_and_not_v_bases = self.game.getNotOwnedAndNotVisibleBases()
         self.not_o_and_v_bases = self.game.getNotOwnedAndVisibleBases()
         self.num_frame = self.game.getNumFrame()
         self.visible_bases = self.game.getVisibleBase()
-        self.my_production_line = self.country.productionLine()
 
         self.all_bases = dict((k, self.all_bases[k])
                               for k in self.all_bases)
@@ -81,8 +82,6 @@ class BaseAI(AbstractAI):
             self.not_o_and_v_bases[k]) for k in self.not_o_and_v_bases)
         self.visible_bases = dict((k, self.visible_bases[k])
                                   for k in self.visible_bases)
-        self.my_production_line = dict((k, self.my_production_line[k])
-                for k in self.my_production_line)
 
         context.all_bases = self.all_bases
         context.ennemy_planes = self.ennemy_planes
@@ -94,15 +93,6 @@ class BaseAI(AbstractAI):
         context.not_owned_and_visible_bases = self.not_owned_and_visible_bases
         context.visible_bases = self.visible_bases
         context.my_production_line = self.my_production_line
-
-    def try_build_plane(self, plane_type=None):
-        if len(self.my_production_line) < 1:
-            self.toggle ^= 1
-            # what type of plane to build?
-            if not plane_type:
-                plane_type = [PlaneType.COMMERCIAL, PlaneType.MILITARY][self.toggle]
-            self.game.sendCommand(BuildPlaneCommand(plane_type))
-
 
     def end(self):
         pass

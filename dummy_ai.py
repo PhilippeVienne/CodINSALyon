@@ -12,8 +12,9 @@ from supply_management import SupplyManagement
 
 class DummyAI(BaseAI):
     def __init__(self, ip, port):
-        super(BaseAI, self).__init__(ip, port)
+        super(DummyAI, self).__init__(ip, port)
         self.managers = [SupplyManagement(self), BuildPlaneManagement(self), ExpansionManagement(self)]
+        self.manager_building = self.managers[0]
 
     def think(self):
         turn = 0
