@@ -12,7 +12,7 @@ class BuildPlaneManagement:
 
     def think(self):
         for p in self.base_ai.country.planes():
-            if p.id not in self.base_ai.my_planes_before:
+            if p.id() not in self.base_ai.my_planes_before:
                 if self.assignations:
                     manager = self.assignations.pop()
                     manager.assign(p)
