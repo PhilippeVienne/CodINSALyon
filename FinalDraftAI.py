@@ -1,5 +1,6 @@
 import sys
 from base_ai import BaseAI
+from RandomBomb import RandomBomb
 import logging
 
 from command import MoveCommand
@@ -42,7 +43,8 @@ class FinalDraftAI(BaseAI):
         self.supply_manager = SupplyManagement(self)
         self.build_plane_manager = BuildPlaneManagement(self)
         self.attack_manager = AttackManager(self)
-        self.managers = [self.supply_manager, self.build_plane_manager, self.expansion_manager]
+        self.random_bomb = RandomBomb(self)
+        self.managers = [self.supply_manager, self.build_plane_manager, self.expansion_manager, self.random_bomb]
         self.my_production_line = []
         self.my_planes = {}
         self.toggle = 1
