@@ -59,4 +59,6 @@ class ExpansionManagement:
         for p in mili_plane:
             bring_democracy(self.base_ai.game, p, ls_bases, fuel_rate)
         for p in rand_plane:
-            bring_democracy(self.base_ai.game, p, bs[:], fuel_rate)
+            if random.random() < 0.1:
+                load_unit(self.base_ai.game, p, self.base_ai.country, fuel_rate)
+            # bring_democracy(self.base_ai.game, p, bs[:], fuel_rate)
